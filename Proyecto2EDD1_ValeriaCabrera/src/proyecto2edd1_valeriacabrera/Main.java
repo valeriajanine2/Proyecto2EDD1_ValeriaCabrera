@@ -62,6 +62,8 @@ public class Main extends javax.swing.JFrame {
         jLabelLogo = new javax.swing.JLabel();
         jButtonOpcion1 = new javax.swing.JButton();
         jButtonOpcion2 = new javax.swing.JButton();
+        jSpinner1 = new javax.swing.JSpinner();
+        jLabelCajeros = new javax.swing.JLabel();
         jLabel1Fondo = new javax.swing.JLabel();
 
         jDialogOpcion1.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -193,6 +195,14 @@ public class Main extends javax.swing.JFrame {
         jButtonOpcion2.setText("Opción 2");
         getContentPane().add(jButtonOpcion2, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 310, 240, 80));
 
+        jSpinner1.setModel(new javax.swing.SpinnerNumberModel(1, 1, 5, 1));
+        getContentPane().add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 430, 70, 30));
+
+        jLabelCajeros.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabelCajeros.setForeground(new java.awt.Color(153, 0, 0));
+        jLabelCajeros.setText("Número de Cajeros:");
+        getContentPane().add(jLabelCajeros, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 410, -1, -1));
+
         jLabel1Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/background1.jpg"))); // NOI18N
         getContentPane().add(jLabel1Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 804, 488));
 
@@ -263,12 +273,14 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabelCajero7;
     private javax.swing.JLabel jLabelCajero8;
     private javax.swing.JLabel jLabelCajero9;
+    private javax.swing.JLabel jLabelCajeros;
     private javax.swing.JLabel jLabelLogo;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JSpinner jSpinner1;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextArea jTextArea3;
