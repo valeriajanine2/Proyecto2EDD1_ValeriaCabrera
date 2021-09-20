@@ -16,6 +16,7 @@ public class Main extends javax.swing.JFrame {
      */
     public Main() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -27,21 +28,44 @@ public class Main extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jLabelLogo = new javax.swing.JLabel();
+        jButtonOpcion1 = new javax.swing.JButton();
+        jButtonOpcion2 = new javax.swing.JButton();
+        jLabel1Fondo = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabelLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/logo transparente.png"))); // NOI18N
+        getContentPane().add(jLabelLogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 20, -1, -1));
+
+        jButtonOpcion1.setBackground(new java.awt.Color(255, 204, 153));
+        jButtonOpcion1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jButtonOpcion1.setForeground(new java.awt.Color(153, 0, 0));
+        jButtonOpcion1.setText("Opción 1");
+        jButtonOpcion1.setActionCommand("Opción 1");
+        jButtonOpcion1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonOpcion1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButtonOpcion1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 310, 240, 80));
+
+        jButtonOpcion2.setBackground(new java.awt.Color(255, 204, 153));
+        jButtonOpcion2.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jButtonOpcion2.setForeground(new java.awt.Color(153, 0, 0));
+        jButtonOpcion2.setText("Opción 2");
+        getContentPane().add(jButtonOpcion2, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 310, 240, 80));
+
+        jLabel1Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/background1.jpg"))); // NOI18N
+        getContentPane().add(jLabel1Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 804, 488));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButtonOpcion1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonOpcion1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonOpcion1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +103,9 @@ public class Main extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButtonOpcion1;
+    private javax.swing.JButton jButtonOpcion2;
+    private javax.swing.JLabel jLabel1Fondo;
+    private javax.swing.JLabel jLabelLogo;
     // End of variables declaration//GEN-END:variables
 }

@@ -28,7 +28,7 @@ public class Pila extends Lista{
     
     @Override
     void METE(String trans, Lista L){
-        //solo para que no tire error la abstaccion
+        
     }
     
     @Override
