@@ -28,10 +28,146 @@ public class Main extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jDialogOpcion1 = new javax.swing.JDialog();
+        jLabelCajero1 = new javax.swing.JLabel();
+        jLabelCajero2 = new javax.swing.JLabel();
+        jLabelCajero3 = new javax.swing.JLabel();
+        jLabelCajero4 = new javax.swing.JLabel();
+        jLabelCajero5 = new javax.swing.JLabel();
+        jLabel1Fondo1 = new javax.swing.JLabel();
+        jDialogOpcion2 = new javax.swing.JDialog();
+        jLabelCajero6 = new javax.swing.JLabel();
+        jLabelCajero7 = new javax.swing.JLabel();
+        jLabelCajero8 = new javax.swing.JLabel();
+        jLabelCajero9 = new javax.swing.JLabel();
+        jLabelCajero10 = new javax.swing.JLabel();
+        jLabel1Fondo2 = new javax.swing.JLabel();
+        jDialogFinal = new javax.swing.JDialog();
+        jLabelCajero11 = new javax.swing.JLabel();
+        jLabelCajero12 = new javax.swing.JLabel();
+        jLabelCajero13 = new javax.swing.JLabel();
+        jLabelCajero14 = new javax.swing.JLabel();
+        jLabelCajero15 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextArea2 = new javax.swing.JTextArea();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTextArea3 = new javax.swing.JTextArea();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jTextArea4 = new javax.swing.JTextArea();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        jTextArea5 = new javax.swing.JTextArea();
+        jLabel1Fondo3 = new javax.swing.JLabel();
         jLabelLogo = new javax.swing.JLabel();
         jButtonOpcion1 = new javax.swing.JButton();
         jButtonOpcion2 = new javax.swing.JButton();
         jLabel1Fondo = new javax.swing.JLabel();
+
+        jDialogOpcion1.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabelCajero1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atm.png"))); // NOI18N
+        jLabelCajero1.setToolTipText("");
+        jDialogOpcion1.getContentPane().add(jLabelCajero1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 60, -1, -1));
+
+        jLabelCajero2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atm.png"))); // NOI18N
+        jLabelCajero2.setToolTipText("");
+        jDialogOpcion1.getContentPane().add(jLabelCajero2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, -1, -1));
+
+        jLabelCajero3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atm.png"))); // NOI18N
+        jLabelCajero3.setToolTipText("");
+        jDialogOpcion1.getContentPane().add(jLabelCajero3, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 60, -1, -1));
+
+        jLabelCajero4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atm.png"))); // NOI18N
+        jLabelCajero4.setToolTipText("");
+        jDialogOpcion1.getContentPane().add(jLabelCajero4, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 60, -1, -1));
+
+        jLabelCajero5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atm.png"))); // NOI18N
+        jLabelCajero5.setToolTipText("");
+        jDialogOpcion1.getContentPane().add(jLabelCajero5, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 60, -1, -1));
+
+        jLabel1Fondo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/background1.jpg"))); // NOI18N
+        jDialogOpcion1.getContentPane().add(jLabel1Fondo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 990, 560));
+
+        jDialogOpcion2.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabelCajero6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atm.png"))); // NOI18N
+        jLabelCajero6.setToolTipText("");
+        jDialogOpcion2.getContentPane().add(jLabelCajero6, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 60, -1, -1));
+
+        jLabelCajero7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atm.png"))); // NOI18N
+        jLabelCajero7.setToolTipText("");
+        jDialogOpcion2.getContentPane().add(jLabelCajero7, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, -1, -1));
+
+        jLabelCajero8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atm.png"))); // NOI18N
+        jLabelCajero8.setToolTipText("");
+        jDialogOpcion2.getContentPane().add(jLabelCajero8, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 60, -1, -1));
+
+        jLabelCajero9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atm.png"))); // NOI18N
+        jLabelCajero9.setToolTipText("");
+        jDialogOpcion2.getContentPane().add(jLabelCajero9, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 60, -1, -1));
+
+        jLabelCajero10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atm.png"))); // NOI18N
+        jLabelCajero10.setToolTipText("");
+        jDialogOpcion2.getContentPane().add(jLabelCajero10, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 60, -1, -1));
+
+        jLabel1Fondo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/background1.jpg"))); // NOI18N
+        jDialogOpcion2.getContentPane().add(jLabel1Fondo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 990, 560));
+
+        jDialogFinal.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabelCajero11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atm.png"))); // NOI18N
+        jLabelCajero11.setToolTipText("");
+        jDialogFinal.getContentPane().add(jLabelCajero11, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 60, -1, -1));
+
+        jLabelCajero12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atm.png"))); // NOI18N
+        jLabelCajero12.setToolTipText("");
+        jDialogFinal.getContentPane().add(jLabelCajero12, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, -1, -1));
+
+        jLabelCajero13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atm.png"))); // NOI18N
+        jLabelCajero13.setToolTipText("");
+        jDialogFinal.getContentPane().add(jLabelCajero13, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 60, -1, -1));
+
+        jLabelCajero14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atm.png"))); // NOI18N
+        jLabelCajero14.setToolTipText("");
+        jDialogFinal.getContentPane().add(jLabelCajero14, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 60, -1, -1));
+
+        jLabelCajero15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atm.png"))); // NOI18N
+        jLabelCajero15.setToolTipText("");
+        jDialogFinal.getContentPane().add(jLabelCajero15, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 60, -1, -1));
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jScrollPane1.setViewportView(jTextArea1);
+
+        jDialogFinal.getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 210, 150, 270));
+
+        jTextArea2.setColumns(20);
+        jTextArea2.setRows(5);
+        jScrollPane2.setViewportView(jTextArea2);
+
+        jDialogFinal.getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 210, 150, 270));
+
+        jTextArea3.setColumns(20);
+        jTextArea3.setRows(5);
+        jScrollPane3.setViewportView(jTextArea3);
+
+        jDialogFinal.getContentPane().add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 210, 150, 270));
+
+        jTextArea4.setColumns(20);
+        jTextArea4.setRows(5);
+        jScrollPane4.setViewportView(jTextArea4);
+
+        jDialogFinal.getContentPane().add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 210, 150, 270));
+
+        jTextArea5.setColumns(20);
+        jTextArea5.setRows(5);
+        jScrollPane5.setViewportView(jTextArea5);
+
+        jDialogFinal.getContentPane().add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 210, 150, 270));
+
+        jLabel1Fondo3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/background1.jpg"))); // NOI18N
+        jDialogFinal.getContentPane().add(jLabel1Fondo3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 990, 560));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -105,7 +241,38 @@ public class Main extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonOpcion1;
     private javax.swing.JButton jButtonOpcion2;
+    private javax.swing.JDialog jDialogFinal;
+    private javax.swing.JDialog jDialogOpcion1;
+    private javax.swing.JDialog jDialogOpcion2;
     private javax.swing.JLabel jLabel1Fondo;
+    private javax.swing.JLabel jLabel1Fondo1;
+    private javax.swing.JLabel jLabel1Fondo2;
+    private javax.swing.JLabel jLabel1Fondo3;
+    private javax.swing.JLabel jLabelCajero1;
+    private javax.swing.JLabel jLabelCajero10;
+    private javax.swing.JLabel jLabelCajero11;
+    private javax.swing.JLabel jLabelCajero12;
+    private javax.swing.JLabel jLabelCajero13;
+    private javax.swing.JLabel jLabelCajero14;
+    private javax.swing.JLabel jLabelCajero15;
+    private javax.swing.JLabel jLabelCajero2;
+    private javax.swing.JLabel jLabelCajero3;
+    private javax.swing.JLabel jLabelCajero4;
+    private javax.swing.JLabel jLabelCajero5;
+    private javax.swing.JLabel jLabelCajero6;
+    private javax.swing.JLabel jLabelCajero7;
+    private javax.swing.JLabel jLabelCajero8;
+    private javax.swing.JLabel jLabelCajero9;
     private javax.swing.JLabel jLabelLogo;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jTextArea2;
+    private javax.swing.JTextArea jTextArea3;
+    private javax.swing.JTextArea jTextArea4;
+    private javax.swing.JTextArea jTextArea5;
     // End of variables declaration//GEN-END:variables
 }
