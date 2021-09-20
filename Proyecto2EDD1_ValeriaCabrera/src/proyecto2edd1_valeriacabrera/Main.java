@@ -193,6 +193,11 @@ public class Main extends javax.swing.JFrame {
         jButtonOpcion2.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jButtonOpcion2.setForeground(new java.awt.Color(153, 0, 0));
         jButtonOpcion2.setText("Opción 2");
+        jButtonOpcion2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonOpcion2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButtonOpcion2, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 310, 240, 80));
 
         jSpinner1.setModel(new javax.swing.SpinnerNumberModel(1, 1, 5, 1));
@@ -210,8 +215,46 @@ public class Main extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonOpcion1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonOpcion1ActionPerformed
-        // TODO add your handling code here:
+        if((Integer)jSpinner1.getValue()==1){
+            jLabelCajero1.setVisible(false);//tercero
+            jLabelCajero5.setVisible(false);//segundo
+            jLabelCajero3.setVisible(false);//cuarto
+            jLabelCajero4.setVisible(false);//quinto
+        }else if((Integer)jSpinner1.getValue()==2){
+            jLabelCajero1.setVisible(false);
+            jLabelCajero3.setVisible(false);
+            jLabelCajero4.setVisible(false);
+        }else if((Integer)jSpinner1.getValue()==3){
+            jLabelCajero3.setVisible(false);
+            jLabelCajero4.setVisible(false);
+        }else if((Integer)jSpinner1.getValue()==4){
+            jLabelCajero4.setVisible(false);
+        }
+        jDialogOpcion1.setModal(true); //no poder tocar a principal
+        jDialogOpcion1.pack();//tamaño se acople a los controles preestablecidos
+        jDialogOpcion1.setVisible(true);
     }//GEN-LAST:event_jButtonOpcion1ActionPerformed
+
+    private void jButtonOpcion2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonOpcion2ActionPerformed
+        if((Integer)jSpinner1.getValue()==1){
+            jLabelCajero6.setVisible(false);//tercero
+            jLabelCajero10.setVisible(false);//segundo
+            jLabelCajero8.setVisible(false);//cuarto
+            jLabelCajero9.setVisible(false);//quinto
+        }else if((Integer)jSpinner1.getValue()==2){
+            jLabelCajero6.setVisible(false);
+            jLabelCajero8.setVisible(false);
+            jLabelCajero9.setVisible(false);
+        }else if((Integer)jSpinner1.getValue()==3){
+            jLabelCajero8.setVisible(false);
+            jLabelCajero9.setVisible(false);
+        }else if((Integer)jSpinner1.getValue()==4){
+            jLabelCajero9.setVisible(false);
+        }
+        jDialogOpcion2.setModal(true); //no poder tocar a principal
+        jDialogOpcion2.pack();//tamaño se acople a los controles preestablecidos
+        jDialogOpcion2.setVisible(true);
+    }//GEN-LAST:event_jButtonOpcion2ActionPerformed
 
     /**
      * @param args the command line arguments
