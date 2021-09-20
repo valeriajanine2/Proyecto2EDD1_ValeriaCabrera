@@ -11,4 +11,33 @@ package proyecto2edd1_valeriacabrera;
  */
 public class Persona {
     
+    private String nombre;
+    private int seg;
+    private String transaction;
+    
+    public Persona(){
+        //constructor vacio
+    }
+    
+    public Persona(String nombre, String transaction){
+        this.nombre=nombre;
+        this.transaction=transaction;
+    }
+    
+    public void setTiempo(int seg){
+        this.seg=seg;
+    }
+    
+    public String getNombre(){
+        return this.nombre;
+    }
+    
+    public int getTiempo(){
+        return this.seg;
+    }
+    
+    public String getTransaction(){
+        return this.transaction;
+    }
+    
 }
