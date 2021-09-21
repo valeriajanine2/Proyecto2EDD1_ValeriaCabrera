@@ -33,6 +33,9 @@ public class Main extends javax.swing.JFrame {
         jLabelCajero2 = new javax.swing.JLabel();
         jLabelCajero3 = new javax.swing.JLabel();
         jLabelCajero4 = new javax.swing.JLabel();
+        jLabel1Minuto1 = new javax.swing.JLabel();
+        jLabel1Puntos1 = new javax.swing.JLabel();
+        jLabel1Segundo1 = new javax.swing.JLabel();
         jLabelCajero5 = new javax.swing.JLabel();
         jLabel1Fondo1 = new javax.swing.JLabel();
         jDialogOpcion2 = new javax.swing.JDialog();
@@ -40,6 +43,9 @@ public class Main extends javax.swing.JFrame {
         jLabelCajero7 = new javax.swing.JLabel();
         jLabelCajero8 = new javax.swing.JLabel();
         jLabelCajero9 = new javax.swing.JLabel();
+        jLabel1Minuto2 = new javax.swing.JLabel();
+        jLabel1Segundo2 = new javax.swing.JLabel();
+        jLabel1Puntos = new javax.swing.JLabel();
         jLabelCajero10 = new javax.swing.JLabel();
         jLabel1Fondo2 = new javax.swing.JLabel();
         jDialogFinal = new javax.swing.JDialog();
@@ -84,6 +90,21 @@ public class Main extends javax.swing.JFrame {
         jLabelCajero4.setToolTipText("");
         jDialogOpcion1.getContentPane().add(jLabelCajero4, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 60, -1, -1));
 
+        jLabel1Minuto1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel1Minuto1.setForeground(new java.awt.Color(153, 0, 0));
+        jLabel1Minuto1.setText("02");
+        jDialogOpcion1.getContentPane().add(jLabel1Minuto1, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 20, 30, 40));
+
+        jLabel1Puntos1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel1Puntos1.setForeground(new java.awt.Color(153, 0, 0));
+        jLabel1Puntos1.setText(":");
+        jDialogOpcion1.getContentPane().add(jLabel1Puntos1, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 20, 20, 40));
+
+        jLabel1Segundo1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel1Segundo1.setForeground(new java.awt.Color(153, 0, 0));
+        jLabel1Segundo1.setText("00");
+        jDialogOpcion1.getContentPane().add(jLabel1Segundo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 20, 40, 40));
+
         jLabelCajero5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atm.png"))); // NOI18N
         jLabelCajero5.setToolTipText("");
         jDialogOpcion1.getContentPane().add(jLabelCajero5, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 60, -1, -1));
@@ -108,6 +129,21 @@ public class Main extends javax.swing.JFrame {
         jLabelCajero9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atm.png"))); // NOI18N
         jLabelCajero9.setToolTipText("");
         jDialogOpcion2.getContentPane().add(jLabelCajero9, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 60, -1, -1));
+
+        jLabel1Minuto2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel1Minuto2.setForeground(new java.awt.Color(153, 0, 0));
+        jLabel1Minuto2.setText("02");
+        jDialogOpcion2.getContentPane().add(jLabel1Minuto2, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 20, 30, 40));
+
+        jLabel1Segundo2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel1Segundo2.setForeground(new java.awt.Color(153, 0, 0));
+        jLabel1Segundo2.setText("00");
+        jDialogOpcion2.getContentPane().add(jLabel1Segundo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 20, 30, 40));
+
+        jLabel1Puntos.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel1Puntos.setForeground(new java.awt.Color(153, 0, 0));
+        jLabel1Puntos.setText(":");
+        jDialogOpcion2.getContentPane().add(jLabel1Puntos, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 20, 20, 40));
 
         jLabelCajero10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atm.png"))); // NOI18N
         jLabelCajero10.setToolTipText("");
@@ -220,19 +256,38 @@ public class Main extends javax.swing.JFrame {
             jLabelCajero5.setVisible(false);//segundo
             jLabelCajero3.setVisible(false);//cuarto
             jLabelCajero4.setVisible(false);//quinto
+            Cajero c1 = new Cajero();
         }else if((Integer)jSpinner1.getValue()==2){
             jLabelCajero1.setVisible(false);
             jLabelCajero3.setVisible(false);
             jLabelCajero4.setVisible(false);
+            Cajero c1 = new Cajero();
+            Cajero c2 = new Cajero();
         }else if((Integer)jSpinner1.getValue()==3){
             jLabelCajero3.setVisible(false);
             jLabelCajero4.setVisible(false);
+            Cajero c1 = new Cajero();
+            Cajero c2 = new Cajero();
+            Cajero c3 = new Cajero();
         }else if((Integer)jSpinner1.getValue()==4){
             jLabelCajero4.setVisible(false);
+            Cajero c1 = new Cajero();
+            Cajero c2 = new Cajero();
+            Cajero c3 = new Cajero();
+            Cajero c4 = new Cajero();
+        }else{
+            Cajero c1 = new Cajero();
+            Cajero c2 = new Cajero();
+            Cajero c3 = new Cajero();
+            Cajero c4 = new Cajero();
+            Cajero c5 = new Cajero();
         }
         jDialogOpcion1.setModal(true); //no poder tocar a principal
         jDialogOpcion1.pack();//tamaño se acople a los controles preestablecidos
         jDialogOpcion1.setVisible(true);
+        cronos=true;
+        Cronometro c = new Cronometro();
+        c.run();
     }//GEN-LAST:event_jButtonOpcion1ActionPerformed
 
     private void jButtonOpcion2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonOpcion2ActionPerformed
@@ -241,19 +296,36 @@ public class Main extends javax.swing.JFrame {
             jLabelCajero10.setVisible(false);//segundo
             jLabelCajero8.setVisible(false);//cuarto
             jLabelCajero9.setVisible(false);//quinto
+            Cajero c1 = new Cajero();
         }else if((Integer)jSpinner1.getValue()==2){
             jLabelCajero6.setVisible(false);
             jLabelCajero8.setVisible(false);
             jLabelCajero9.setVisible(false);
+            Cajero c1 = new Cajero();
+            Cajero c2 = new Cajero();
         }else if((Integer)jSpinner1.getValue()==3){
             jLabelCajero8.setVisible(false);
             jLabelCajero9.setVisible(false);
+            Cajero c1 = new Cajero();
+            Cajero c2 = new Cajero();
+            Cajero c3 = new Cajero();
         }else if((Integer)jSpinner1.getValue()==4){
             jLabelCajero9.setVisible(false);
+            Cajero c1 = new Cajero();
+            Cajero c2 = new Cajero();
+            Cajero c3 = new Cajero();
+            Cajero c4 = new Cajero();
+        }else{
+            Cajero c1 = new Cajero();
+            Cajero c2 = new Cajero();
+            Cajero c3 = new Cajero();
+            Cajero c4 = new Cajero();
+            Cajero c5 = new Cajero();
         }
         jDialogOpcion2.setModal(true); //no poder tocar a principal
         jDialogOpcion2.pack();//tamaño se acople a los controles preestablecidos
         jDialogOpcion2.setVisible(true);
+        cronos=true;
     }//GEN-LAST:event_jButtonOpcion2ActionPerformed
 
     /**
@@ -301,6 +373,12 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1Fondo1;
     private javax.swing.JLabel jLabel1Fondo2;
     private javax.swing.JLabel jLabel1Fondo3;
+    private javax.swing.JLabel jLabel1Minuto1;
+    private javax.swing.JLabel jLabel1Minuto2;
+    private javax.swing.JLabel jLabel1Puntos;
+    private javax.swing.JLabel jLabel1Puntos1;
+    private javax.swing.JLabel jLabel1Segundo1;
+    private javax.swing.JLabel jLabel1Segundo2;
     private javax.swing.JLabel jLabelCajero1;
     private javax.swing.JLabel jLabelCajero10;
     private javax.swing.JLabel jLabelCajero11;
@@ -330,4 +408,77 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea4;
     private javax.swing.JTextArea jTextArea5;
     // End of variables declaration//GEN-END:variables
+    
+    public class Cronometro extends Thread{
+        
+        @Override
+        public void run(){
+        int x = 6;
+        
+        while(cronos){
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException ex) {
+                System.out.println("Error en el hilo"+ex.getMessage());
+            }
+            x--;
+            Cronometro(x);
+        }
+        
+        
+        }
+        
+        public void Cronometro(int x){
+            System.out.println("imprime");
+            int tempM = Integer.parseInt(jLabel1Minuto1.getText());
+            int tempS = Integer.parseInt(jLabel1Segundo1.getText());
+            if(tempS==0){
+                tempS=60;
+                tempM--;
+            }
+            
+            tempS--;
+            
+            
+            
+            String minuto = "";
+            String segundo = "";
+            minuto+=tempM;
+            segundo+=tempS;
+            
+            
+            
+            if(tempM<10 && tempS<10 ){
+                minuto='0'+minuto;
+                segundo='0'+segundo;
+                //tiempo = '0'+minuto+'0'+segundo;
+            }else if(tempM>9 && tempS>9){
+                //minuto='0'+minuto;
+                //segundo='0'+segundo;
+                //tiempo = 
+            }else if(tempM>9 && tempS>9){
+                //minuto='0'+minuto;
+                segundo='0'+segundo;
+            }else if(tempM>9 && tempS>9){
+                minuto='0'+minuto;
+                //segundo='0'+segundo;
+            }
+            
+            jLabel1Minuto1.setText(minuto);
+            jLabel1Segundo1.setText(segundo);
+            
+            if(x==0){
+                cronos=false;
+                jDialogOpcion1.setVisible(false);
+                jDialogOpcion1.setModal(true); //no poder tocar a principal
+                jDialogOpcion1.pack();//tamaño se acople a los controles preestablecidos
+                jDialogFinal.setVisible(true);
+            }
+        }
+        
+    }
+    
+    boolean cronos=false;
+    
+    
 }
