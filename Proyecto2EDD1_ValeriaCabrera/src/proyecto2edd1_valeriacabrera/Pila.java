@@ -28,11 +28,11 @@ public class Pila extends Lista{
     
     @Override
     void METE(String trans, Lista L){
-        
+        L.transacciones.add(trans);
     }
     
     @Override
-    void PONE(Persona P, Lista L){
+    void PONE(Persona P, int opcion, Lista L){
         //solo para que no tire error la abstaccion
     }
     
@@ -48,7 +48,13 @@ public class Pila extends Lista{
     
     @Override
     void IMPRIME_LISTA(Lista P){
-        
+        if(P.VACIA(P)){
+            System.out.println("La pila esta vacia");
+        }else{
+            for (int i = 0; i < P.transacciones.size(); i++) {
+                System.out.println(P.transacciones.get(i));
+            }
+        }
     }
     
 }

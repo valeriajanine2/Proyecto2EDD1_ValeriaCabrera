@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package proyecto2edd1_valeriacabrera;
-
+import java.util.Random;
 /**
  *
  * @author Usuario
@@ -17,17 +17,17 @@ public class Persona {
     
     public Persona(){
         //constructor vacio
+        
     }
     
     public Persona(String nombre, String transaction){
         this.nombre=nombre;
         this.transaction=transaction;
+        Random rand = new Random();
+        int temp = rand.nextInt(3)+1;
+        this.seg=temp;
     }
-    
-    public void setTiempo(int seg){
-        this.seg=seg;
-    }
-    
+ 
     public String getNombre(){
         return this.nombre;
     }

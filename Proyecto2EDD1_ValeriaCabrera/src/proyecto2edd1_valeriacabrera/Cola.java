@@ -32,8 +32,16 @@ public class Cola extends Lista{
     }
     
     @Override
-    void PONE(Persona P, Lista L){
-        
+    void PONE(Persona P, int opcion, Lista L){
+        if(opcion==1){
+            int temp = this.personas.size()+1;//agregar al "final" en la cola
+            if(temp==1){
+                //se añade por primera vez
+                this.personas.add(P);
+            }else{
+                this.personas.add(temp,P);
+            }
+        }
     }
     
     @Override
