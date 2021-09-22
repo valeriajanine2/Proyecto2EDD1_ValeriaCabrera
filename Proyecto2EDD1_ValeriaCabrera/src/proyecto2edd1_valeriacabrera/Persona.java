@@ -17,7 +17,6 @@ public class Persona {
     
     public Persona(){
         //constructor vacio
-        
     }
     
     public Persona(String nombre, String transaction){

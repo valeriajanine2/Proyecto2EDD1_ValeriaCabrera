@@ -33,26 +33,26 @@ public class Pila extends Lista{
     
     @Override
     void PONE(Persona P, int opcion, Lista L){
-        //solo para que no tire error la abstaccion
+        //solo para que no tire error la abstraccion
     }
     
     @Override
     void QUITA(Lista L){
-        //solo para que no tire error la abstaccion
+        //solo para que no tire error la abstraccion
     }
     
     @Override
-    void ANULA(Lista P){
-        P.transacciones.clear();
+    void ANULA(Lista L){
+        L.transacciones.clear();
     }
     
     @Override
-    void IMPRIME_LISTA(Lista P){
-        if(P.VACIA(P)){
+    void IMPRIME_LISTA(Lista L){
+        if(L.VACIA(L)){
             System.out.println("La pila esta vacia");
         }else{
-            for (int i = 0; i < P.transacciones.size(); i++) {
-                System.out.println(P.transacciones.get(i));
+            for (int i = 0; i < L.transacciones.size(); i++) {
+                System.out.println(L.transacciones.get(i));
             }
         }
     }

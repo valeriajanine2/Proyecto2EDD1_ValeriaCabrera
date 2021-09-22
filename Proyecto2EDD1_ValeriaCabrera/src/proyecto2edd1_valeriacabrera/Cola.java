@@ -28,19 +28,24 @@ public class Cola extends Lista{
     
     @Override
     void METE(String trans, Lista L){
-        //solo para que no tire error la abstaccion
+        //solo para que no tire error la abstraccion
     }
     
     @Override
     void PONE(Persona P, int opcion, Lista L){
+        
         if(opcion==1){
-            int temp = this.personas.size()+1;//agregar al "final" en la cola
+            int temp = this.personas.size();//agregar al "final" en la cola
             if(temp==1){
                 //se añade por primera vez
+                System.out.println("Se añade "+P.getNombre());
                 this.personas.add(P);
             }else{
                 this.personas.add(temp,P);
+                System.out.println("Se añade "+P.getNombre());
             }
+        }else{
+            
         }
     }
     
@@ -50,13 +55,20 @@ public class Cola extends Lista{
     }
     
     @Override
-    void ANULA(Lista P){
-        P.personas.clear();
+    void ANULA(Lista L){
+        L.personas.clear();
     }
     
     @Override
-    void IMPRIME_LISTA(Lista P){
-        
+    void IMPRIME_LISTA(Lista L){
+        if(L.VACIA(L)){
+            System.out.println("La pila esta vacia");
+        }else{
+            for (int i = 0; i < L.personas.size(); i++) {
+                String nombre = L.personas.get(i).getNombre();
+                System.out.println(nombre);
+            }
+        }
     }
     
 }

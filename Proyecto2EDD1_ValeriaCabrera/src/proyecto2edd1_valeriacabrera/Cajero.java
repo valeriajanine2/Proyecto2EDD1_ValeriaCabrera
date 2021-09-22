@@ -12,6 +12,7 @@ package proyecto2edd1_valeriacabrera;
 public class Cajero {
     
     private Pila transacciones;
+    private Cola personas;
     
     public Cajero(){
         //constructor vacio
@@ -20,5 +21,10 @@ public class Cajero {
     public Pila getPila(){
         return this.transacciones;
     }
+    
+    public void opcion2(){
+        
+    }
+    
     
 }

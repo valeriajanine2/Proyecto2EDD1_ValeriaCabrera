@@ -5,6 +5,8 @@
  */
 package proyecto2edd1_valeriacabrera;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Usuario
@@ -36,6 +38,11 @@ public class Main extends javax.swing.JFrame {
         jLabelCajero4 = new javax.swing.JLabel();
         jLabelCajero5 = new javax.swing.JLabel();
         jButton1Start = new javax.swing.JButton();
+        jLabelPersona1 = new javax.swing.JLabel();
+        jLabelPersona2 = new javax.swing.JLabel();
+        jLabelPersona3 = new javax.swing.JLabel();
+        jLabelPersona4 = new javax.swing.JLabel();
+        jLabelPersona5 = new javax.swing.JLabel();
         jLabel1Fondo1 = new javax.swing.JLabel();
         jDialogOpcion2 = new javax.swing.JDialog();
         jLabelCajero6 = new javax.swing.JLabel();
@@ -44,6 +51,16 @@ public class Main extends javax.swing.JFrame {
         jLabelCajero9 = new javax.swing.JLabel();
         jLabelCajero10 = new javax.swing.JLabel();
         jButton1Start1 = new javax.swing.JButton();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        jList1 = new javax.swing.JList<>();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        jList2 = new javax.swing.JList<>();
+        jScrollPane8 = new javax.swing.JScrollPane();
+        jList3 = new javax.swing.JList<>();
+        jScrollPane9 = new javax.swing.JScrollPane();
+        jList4 = new javax.swing.JList<>();
+        jScrollPane10 = new javax.swing.JScrollPane();
+        jList5 = new javax.swing.JList<>();
         jLabel1Fondo2 = new javax.swing.JLabel();
         jDialogFinal = new javax.swing.JDialog();
         jLabelCajero11 = new javax.swing.JLabel();
@@ -99,6 +116,26 @@ public class Main extends javax.swing.JFrame {
         });
         jDialogOpcion1.getContentPane().add(jButton1Start, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 450, -1, -1));
 
+        jLabelPersona1.setForeground(new java.awt.Color(153, 0, 0));
+        jLabelPersona1.setText("Persona1");
+        jDialogOpcion1.getContentPane().add(jLabelPersona1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 220, -1, -1));
+
+        jLabelPersona2.setForeground(new java.awt.Color(153, 0, 0));
+        jLabelPersona2.setText("Persona2");
+        jDialogOpcion1.getContentPane().add(jLabelPersona2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 220, -1, -1));
+
+        jLabelPersona3.setForeground(new java.awt.Color(153, 0, 0));
+        jLabelPersona3.setText("Persona3");
+        jDialogOpcion1.getContentPane().add(jLabelPersona3, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 220, -1, -1));
+
+        jLabelPersona4.setForeground(new java.awt.Color(153, 0, 0));
+        jLabelPersona4.setText("Persona4");
+        jDialogOpcion1.getContentPane().add(jLabelPersona4, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 220, -1, -1));
+
+        jLabelPersona5.setForeground(new java.awt.Color(153, 0, 0));
+        jLabelPersona5.setText("Persona5");
+        jDialogOpcion1.getContentPane().add(jLabelPersona5, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 220, -1, -1));
+
         jLabel1Fondo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/background1.jpg"))); // NOI18N
         jDialogOpcion1.getContentPane().add(jLabel1Fondo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 990, 560));
 
@@ -131,6 +168,41 @@ public class Main extends javax.swing.JFrame {
             }
         });
         jDialogOpcion2.getContentPane().add(jButton1Start1, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 450, -1, -1));
+
+        jScrollPane6.setViewportView(jList1);
+
+        jDialogOpcion2.getContentPane().add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 220, 100, 210));
+
+        jScrollPane7.setViewportView(jList2);
+
+        jDialogOpcion2.getContentPane().add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 220, 100, 210));
+
+        jList3.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { " " };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane8.setViewportView(jList3);
+
+        jDialogOpcion2.getContentPane().add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 220, 100, 210));
+
+        jList4.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane9.setViewportView(jList4);
+
+        jDialogOpcion2.getContentPane().add(jScrollPane9, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 220, 100, 210));
+
+        jList5.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane10.setViewportView(jList5);
+
+        jDialogOpcion2.getContentPane().add(jScrollPane10, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 220, 100, 210));
 
         jLabel1Fondo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/background1.jpg"))); // NOI18N
         jDialogOpcion2.getContentPane().add(jLabel1Fondo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 990, 560));
@@ -308,15 +380,131 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonOpcion2ActionPerformed
 
     private void jButton1StartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1StartActionPerformed
+        //crear las personas
+        Persona p1 = new Persona("Valeria","Deposito");
+        Persona p2 = new Persona("Janine","Pago");
+        Persona p3 = new Persona("Eduardo","Deposito");
+        Persona p4 = new Persona("Antonio","Retiro");
+        Persona p5 = new Persona("Claudia","Pago");
+        Persona p6 = new Persona("Enrique","Deposito");
+        Persona p7 = new Persona("Samuel","Retiro");
+        Persona p8 = new Persona("Fernando","Deposito");
+        Persona p9 = new Persona("Tyler","Deposito");
+        Persona p10 = new Persona("Manuel","Deposito");
+        Persona p11 = new Persona("Ana","Deposito");
+        Persona p12 = new Persona("Cecilia","Deposito");
+        Persona p13 = new Persona("Gustavo","Deposito");
+        Persona p14 = new Persona("Luis","Deposito");
+        Persona p15 = new Persona("Carlos","Deposito");
+        Persona p16 = new Persona("Noel","Deposito");
+        Persona p17 = new Persona("Walter","Deposito");
+        Persona p18 = new Persona("Ronal","Deposito");
+        Persona p19 = new Persona("Josue","Deposito");
+        Persona p20 = new Persona("Roman","Deposito");
+        Persona p21 = new Persona("Esmeralda","Deposito");
+        Persona p22 = new Persona("Dora","Deposito");
+        Persona p23 = new Persona("Gladys","Deposito");
+        Persona p24 = new Persona("Maria","Deposito");
+        Persona p25 = new Persona("Paola","Deposito");
+        Persona p26 = new Persona("Emmanuel","Deposito");
+        Persona p27 = new Persona("Daniel","Deposito");
+        Persona p28 = new Persona("Angel","Deposito");
+        Persona p29 = new Persona("Jorge","Deposito");
+        Persona p30 = new Persona("Alejandro","Deposito");
+        Persona p31 = new Persona("Pedro","Deposito");
+        Persona p32 = new Persona("Armando","Deposito");
+        Persona p33 = new Persona("Emma","Deposito");
+        Persona p34 = new Persona("Dulce","Deposito");
+        Persona p35 = new Persona("Felipe","Deposito");
+        Persona p36 = new Persona("Anahi","Deposito");
+        Persona p37 = new Persona("Ricardo","Deposito");
+        Persona p38 = new Persona("Hugo","Deposito");
+        Persona p39 = new Persona("Lydia","Deposito");
+        Persona p40 = new Persona("Isabel","Deposito");
+        Persona p41 = new Persona("Tirsa","Deposito");
+        Persona p42 = new Persona("Andres","Deposito");
+        Persona p43 = new Persona("Isabella","Deposito");
+        Persona p44 = new Persona("Annie","Deposito");
+        Persona p45 = new Persona("Lucas","Deposito");
+        Persona p46 = new Persona("Ruth","Deposito");
+        Persona p47 = new Persona("Mario","Deposito");
+        Persona p48 = new Persona("Abigail","Deposito");
+        Persona p49 = new Persona("Hector","Deposito");
+        Persona p50 = new Persona("Pablo","Deposito");
+        //meter a las personas a la cola
+        Cola principal = new Cola();
+        principal.PONE(p1, 1, principal);
+        principal.PONE(p2, 1, principal);
+        principal.PONE(p3, 1, principal);
+        principal.PONE(p4, 1, principal);
+        principal.PONE(p5, 1, principal);
+        principal.PONE(p6, 1, principal);
+        principal.PONE(p7, 1, principal);
+        principal.PONE(p8, 1, principal);
+        principal.PONE(p9, 1, principal);
+        principal.PONE(p10, 1, principal);
+        principal.PONE(p11, 1, principal);
+        principal.PONE(p12, 1, principal);
+        principal.PONE(p13, 1, principal);
+        principal.PONE(p14, 1, principal);
+        principal.PONE(p15, 1, principal);
+        principal.PONE(p16, 1, principal);
+        principal.PONE(p17, 1, principal);
+        principal.PONE(p18, 1, principal);
+        principal.PONE(p19, 1, principal);
+        principal.PONE(p20, 1, principal);
+        principal.PONE(p21, 1, principal);
+        principal.PONE(p22, 1, principal);
+        principal.PONE(p23, 1, principal);
+        principal.PONE(p24, 1, principal);
+        principal.PONE(p25, 1, principal);
+        principal.PONE(p26, 1, principal);
+        principal.PONE(p27, 1, principal);
+        principal.PONE(p28, 1, principal);
+        principal.PONE(p29, 1, principal);
+        principal.PONE(p30, 1, principal);
+        principal.PONE(p31, 1, principal);
+        principal.PONE(p32, 1, principal);
+        principal.PONE(p33, 1, principal);
+        principal.PONE(p34, 1, principal);
+        principal.PONE(p35, 1, principal);
+        principal.PONE(p36, 1, principal);
+        principal.PONE(p37, 1, principal);
+        principal.PONE(p38, 1, principal);
+        principal.PONE(p39, 1, principal);
+        principal.PONE(p40, 1, principal);
+        principal.PONE(p41, 1, principal);
+        principal.PONE(p42, 1, principal);
+        principal.PONE(p43, 1, principal);
+        principal.PONE(p44, 1, principal);
+        principal.PONE(p45, 1, principal);
+        principal.PONE(p46, 1, principal);
+        principal.PONE(p47, 1, principal);
+        principal.PONE(p48, 1, principal);
+        principal.PONE(p49, 1, principal);
+        principal.PONE(p50, 1, principal);
+        principal.IMPRIME_LISTA(principal);
+        jLabelPersona1.setText(p1.getNombre());
+        jLabelPersona2.setText(p2.getNombre());
+        jLabelPersona3.setText(p3.getNombre());
+        jLabelPersona4.setText(p4.getNombre());
+        jLabelPersona5.setText(p5.getNombre());
+        JOptionPane.showMessageDialog(null, "Comienza");
         cronos=true;
         Cronometro1 c = new Cronometro1();
         c.run();
+        //usar el sleep
+        
+        
     }//GEN-LAST:event_jButton1StartActionPerformed
 
     private void jButton1Start1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1Start1ActionPerformed
         cronos=true;
         Cronometro2 c = new Cronometro2();
         c.run();
+        //comenzar la simulacion
+        
+        
     }//GEN-LAST:event_jButton1Start1ActionPerformed
 
     /**
@@ -383,11 +571,26 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabelCajero9;
     private javax.swing.JLabel jLabelCajeros;
     private javax.swing.JLabel jLabelLogo;
+    private javax.swing.JLabel jLabelPersona1;
+    private javax.swing.JLabel jLabelPersona2;
+    private javax.swing.JLabel jLabelPersona3;
+    private javax.swing.JLabel jLabelPersona4;
+    private javax.swing.JLabel jLabelPersona5;
+    private javax.swing.JList<String> jList1;
+    private javax.swing.JList<String> jList2;
+    private javax.swing.JList<String> jList3;
+    private javax.swing.JList<String> jList4;
+    private javax.swing.JList<String> jList5;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane10;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane7;
+    private javax.swing.JScrollPane jScrollPane8;
+    private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JSpinner jSpinner1;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea2;
