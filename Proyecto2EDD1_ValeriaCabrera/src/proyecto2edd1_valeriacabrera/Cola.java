@@ -38,11 +38,9 @@ public class Cola extends Lista{
             int temp = this.personas.size();//agregar al "final" en la cola
             if(temp==1){
                 //se añade por primera vez
-                System.out.println("Se añade "+P.getNombre());
                 this.personas.add(P);
             }else{
                 this.personas.add(temp,P);
-                System.out.println("Se añade "+P.getNombre());
             }
         }else{
             
@@ -51,7 +49,8 @@ public class Cola extends Lista{
     
     @Override
     void QUITA(Lista L){
-        
+        System.out.println("removed "+this.personas.get(0).getNombre());
+        this.personas.remove(0);
     }
     
     @Override
@@ -69,6 +68,10 @@ public class Cola extends Lista{
                 System.out.println(nombre);
             }
         }
+    }
+    
+    public Persona getPersona(){
+        return this.personas.get(0);
     }
     
 }

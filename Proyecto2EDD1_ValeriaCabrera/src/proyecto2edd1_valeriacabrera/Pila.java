@@ -28,7 +28,7 @@ public class Pila extends Lista{
     
     @Override
     void METE(String trans, Lista L){
-        L.transacciones.add(trans);
+        this.transacciones.add(trans);
     }
     
     @Override
@@ -55,6 +55,15 @@ public class Pila extends Lista{
                 System.out.println(L.transacciones.get(i));
             }
         }
+    }
+    
+    public String toString(Lista L){
+        String resp = "";
+        for (int i = 0; i < L.transacciones.size(); i++) {
+                String temp = L.transacciones.get(i);
+                resp = resp + temp + "\n";
+            }
+        return resp;
     }
     
 }

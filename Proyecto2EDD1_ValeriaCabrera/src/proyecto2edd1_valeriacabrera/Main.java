@@ -5,7 +5,11 @@
  */
 package proyecto2edd1_valeriacabrera;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
+import java.util.Random;
+import javax.swing.JProgressBar;
 
 /**
  *
@@ -19,6 +23,8 @@ public class Main extends javax.swing.JFrame {
     public Main() {
         initComponents();
         this.setLocationRelativeTo(null);
+        pg_1.setValue(0);
+        
         
     }
 
@@ -32,17 +38,7 @@ public class Main extends javax.swing.JFrame {
     private void initComponents() {
 
         jDialogOpcion1 = new javax.swing.JDialog();
-        jLabelCajero1 = new javax.swing.JLabel();
-        jLabelCajero2 = new javax.swing.JLabel();
-        jLabelCajero3 = new javax.swing.JLabel();
-        jLabelCajero4 = new javax.swing.JLabel();
-        jLabelCajero5 = new javax.swing.JLabel();
-        jButton1Start = new javax.swing.JButton();
-        jLabelPersona1 = new javax.swing.JLabel();
-        jLabelPersona2 = new javax.swing.JLabel();
-        jLabelPersona3 = new javax.swing.JLabel();
-        jLabelPersona4 = new javax.swing.JLabel();
-        jLabelPersona5 = new javax.swing.JLabel();
+        pg_1 = new javax.swing.JProgressBar();
         jLabel1Fondo1 = new javax.swing.JLabel();
         jDialogOpcion2 = new javax.swing.JDialog();
         jLabelCajero6 = new javax.swing.JLabel();
@@ -84,60 +80,18 @@ public class Main extends javax.swing.JFrame {
         jButtonOpcion2 = new javax.swing.JButton();
         jSpinner1 = new javax.swing.JSpinner();
         jLabelCajeros = new javax.swing.JLabel();
+        jButton1Start = new javax.swing.JButton();
         jLabel1Fondo = new javax.swing.JLabel();
 
         jDialogOpcion1.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabelCajero1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atm.png"))); // NOI18N
-        jLabelCajero1.setToolTipText("");
-        jDialogOpcion1.getContentPane().add(jLabelCajero1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 60, -1, -1));
-
-        jLabelCajero2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atm.png"))); // NOI18N
-        jLabelCajero2.setToolTipText("");
-        jDialogOpcion1.getContentPane().add(jLabelCajero2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, -1, -1));
-
-        jLabelCajero3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atm.png"))); // NOI18N
-        jLabelCajero3.setToolTipText("");
-        jDialogOpcion1.getContentPane().add(jLabelCajero3, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 60, -1, -1));
-
-        jLabelCajero4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atm.png"))); // NOI18N
-        jLabelCajero4.setToolTipText("");
-        jDialogOpcion1.getContentPane().add(jLabelCajero4, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 60, -1, -1));
-
-        jLabelCajero5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atm.png"))); // NOI18N
-        jLabelCajero5.setToolTipText("");
-        jDialogOpcion1.getContentPane().add(jLabelCajero5, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 60, -1, -1));
-
-        jButton1Start.setText("Start");
-        jButton1Start.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1StartActionPerformed(evt);
-            }
-        });
-        jDialogOpcion1.getContentPane().add(jButton1Start, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 450, -1, -1));
-
-        jLabelPersona1.setForeground(new java.awt.Color(153, 0, 0));
-        jLabelPersona1.setText("Persona1");
-        jDialogOpcion1.getContentPane().add(jLabelPersona1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 220, -1, -1));
-
-        jLabelPersona2.setForeground(new java.awt.Color(153, 0, 0));
-        jLabelPersona2.setText("Persona2");
-        jDialogOpcion1.getContentPane().add(jLabelPersona2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 220, -1, -1));
-
-        jLabelPersona3.setForeground(new java.awt.Color(153, 0, 0));
-        jLabelPersona3.setText("Persona3");
-        jDialogOpcion1.getContentPane().add(jLabelPersona3, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 220, -1, -1));
-
-        jLabelPersona4.setForeground(new java.awt.Color(153, 0, 0));
-        jLabelPersona4.setText("Persona4");
-        jDialogOpcion1.getContentPane().add(jLabelPersona4, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 220, -1, -1));
-
-        jLabelPersona5.setForeground(new java.awt.Color(153, 0, 0));
-        jLabelPersona5.setText("Persona5");
-        jDialogOpcion1.getContentPane().add(jLabelPersona5, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 220, -1, -1));
+        pg_1.setBackground(new java.awt.Color(51, 51, 51));
+        pg_1.setForeground(new java.awt.Color(102, 0, 0));
+        pg_1.setMaximum(120);
+        jDialogOpcion1.getContentPane().add(pg_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 120, 450, -1));
 
         jLabel1Fondo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/background1.jpg"))); // NOI18N
-        jDialogOpcion1.getContentPane().add(jLabel1Fondo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 990, 560));
+        jDialogOpcion1.getContentPane().add(jLabel1Fondo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-140, -180, 740, 500));
 
         jDialogOpcion2.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -266,7 +220,7 @@ public class Main extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabelLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/logo transparente.png"))); // NOI18N
-        getContentPane().add(jLabelLogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 20, -1, -1));
+        getContentPane().add(jLabelLogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 30, -1, -1));
 
         jButtonOpcion1.setBackground(new java.awt.Color(255, 204, 153));
         jButtonOpcion1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -299,6 +253,14 @@ public class Main extends javax.swing.JFrame {
         jLabelCajeros.setText("Número de Cajeros:");
         getContentPane().add(jLabelCajeros, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 410, -1, -1));
 
+        jButton1Start.setText("Start");
+        jButton1Start.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1StartActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1Start, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 440, -1, -1));
+
         jLabel1Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/background1.jpg"))); // NOI18N
         getContentPane().add(jLabel1Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 804, 488));
 
@@ -306,194 +268,140 @@ public class Main extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonOpcion1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonOpcion1ActionPerformed
-        if((Integer)jSpinner1.getValue()==1){
+        /*if((Integer)jSpinner1.getValue()==1){
             jLabelCajero1.setVisible(false);//tercero
             jLabelCajero5.setVisible(false);//segundo
             jLabelCajero3.setVisible(false);//cuarto
             jLabelCajero4.setVisible(false);//quinto
-            Cajero c1 = new Cajero();
         }else if((Integer)jSpinner1.getValue()==2){
             jLabelCajero1.setVisible(false);
             jLabelCajero3.setVisible(false);
             jLabelCajero4.setVisible(false);
-            Cajero c1 = new Cajero();
-            Cajero c2 = new Cajero();
         }else if((Integer)jSpinner1.getValue()==3){
             jLabelCajero3.setVisible(false);
             jLabelCajero4.setVisible(false);
-            Cajero c1 = new Cajero();
-            Cajero c2 = new Cajero();
-            Cajero c3 = new Cajero();
+
         }else if((Integer)jSpinner1.getValue()==4){
             jLabelCajero4.setVisible(false);
-            Cajero c1 = new Cajero();
-            Cajero c2 = new Cajero();
-            Cajero c3 = new Cajero();
-            Cajero c4 = new Cajero();
-        }else{
-            Cajero c1 = new Cajero();
-            Cajero c2 = new Cajero();
-            Cajero c3 = new Cajero();
-            Cajero c4 = new Cajero();
-            Cajero c5 = new Cajero();
-        }
+        }*/
         jDialogOpcion1.setModal(true); //no poder tocar a principal
         jDialogOpcion1.pack();//tamaño se acople a los controles preestablecidos
         jDialogOpcion1.setVisible(true);
+        opciones=true;
     }//GEN-LAST:event_jButtonOpcion1ActionPerformed
 
     private void jButtonOpcion2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonOpcion2ActionPerformed
-        if((Integer)jSpinner1.getValue()==1){
+        /*if((Integer)jSpinner1.getValue()==1){
             jLabelCajero6.setVisible(false);//tercero
             jLabelCajero10.setVisible(false);//segundo
             jLabelCajero8.setVisible(false);//cuarto
             jLabelCajero9.setVisible(false);//quinto
-            Cajero c1 = new Cajero();
         }else if((Integer)jSpinner1.getValue()==2){
             jLabelCajero6.setVisible(false);
             jLabelCajero8.setVisible(false);
             jLabelCajero9.setVisible(false);
-            Cajero c1 = new Cajero();
-            Cajero c2 = new Cajero();
         }else if((Integer)jSpinner1.getValue()==3){
             jLabelCajero8.setVisible(false);
             jLabelCajero9.setVisible(false);
-            Cajero c1 = new Cajero();
-            Cajero c2 = new Cajero();
-            Cajero c3 = new Cajero();
         }else if((Integer)jSpinner1.getValue()==4){
             jLabelCajero9.setVisible(false);
-            Cajero c1 = new Cajero();
-            Cajero c2 = new Cajero();
-            Cajero c3 = new Cajero();
-            Cajero c4 = new Cajero();
-        }else{
-            Cajero c1 = new Cajero();
-            Cajero c2 = new Cajero();
-            Cajero c3 = new Cajero();
-            Cajero c4 = new Cajero();
-            Cajero c5 = new Cajero();
-        }
+        }*/
         jDialogOpcion2.setModal(true); //no poder tocar a principal
         jDialogOpcion2.pack();//tamaño se acople a los controles preestablecidos
         jDialogOpcion2.setVisible(true);
     }//GEN-LAST:event_jButtonOpcion2ActionPerformed
 
     private void jButton1StartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1StartActionPerformed
-        //crear las personas
-        Persona p1 = new Persona("Valeria","Deposito");
-        Persona p2 = new Persona("Janine","Pago");
-        Persona p3 = new Persona("Eduardo","Deposito");
-        Persona p4 = new Persona("Antonio","Retiro");
-        Persona p5 = new Persona("Claudia","Pago");
-        Persona p6 = new Persona("Enrique","Deposito");
-        Persona p7 = new Persona("Samuel","Retiro");
-        Persona p8 = new Persona("Fernando","Deposito");
-        Persona p9 = new Persona("Tyler","Deposito");
-        Persona p10 = new Persona("Manuel","Deposito");
-        Persona p11 = new Persona("Ana","Deposito");
-        Persona p12 = new Persona("Cecilia","Deposito");
-        Persona p13 = new Persona("Gustavo","Deposito");
-        Persona p14 = new Persona("Luis","Deposito");
-        Persona p15 = new Persona("Carlos","Deposito");
-        Persona p16 = new Persona("Noel","Deposito");
-        Persona p17 = new Persona("Walter","Deposito");
-        Persona p18 = new Persona("Ronal","Deposito");
-        Persona p19 = new Persona("Josue","Deposito");
-        Persona p20 = new Persona("Roman","Deposito");
-        Persona p21 = new Persona("Esmeralda","Deposito");
-        Persona p22 = new Persona("Dora","Deposito");
-        Persona p23 = new Persona("Gladys","Deposito");
-        Persona p24 = new Persona("Maria","Deposito");
-        Persona p25 = new Persona("Paola","Deposito");
-        Persona p26 = new Persona("Emmanuel","Deposito");
-        Persona p27 = new Persona("Daniel","Deposito");
-        Persona p28 = new Persona("Angel","Deposito");
-        Persona p29 = new Persona("Jorge","Deposito");
-        Persona p30 = new Persona("Alejandro","Deposito");
-        Persona p31 = new Persona("Pedro","Deposito");
-        Persona p32 = new Persona("Armando","Deposito");
-        Persona p33 = new Persona("Emma","Deposito");
-        Persona p34 = new Persona("Dulce","Deposito");
-        Persona p35 = new Persona("Felipe","Deposito");
-        Persona p36 = new Persona("Anahi","Deposito");
-        Persona p37 = new Persona("Ricardo","Deposito");
-        Persona p38 = new Persona("Hugo","Deposito");
-        Persona p39 = new Persona("Lydia","Deposito");
-        Persona p40 = new Persona("Isabel","Deposito");
-        Persona p41 = new Persona("Tirsa","Deposito");
-        Persona p42 = new Persona("Andres","Deposito");
-        Persona p43 = new Persona("Isabella","Deposito");
-        Persona p44 = new Persona("Annie","Deposito");
-        Persona p45 = new Persona("Lucas","Deposito");
-        Persona p46 = new Persona("Ruth","Deposito");
-        Persona p47 = new Persona("Mario","Deposito");
-        Persona p48 = new Persona("Abigail","Deposito");
-        Persona p49 = new Persona("Hector","Deposito");
-        Persona p50 = new Persona("Pablo","Deposito");
-        //meter a las personas a la cola
-        Cola principal = new Cola();
-        principal.PONE(p1, 1, principal);
-        principal.PONE(p2, 1, principal);
-        principal.PONE(p3, 1, principal);
-        principal.PONE(p4, 1, principal);
-        principal.PONE(p5, 1, principal);
-        principal.PONE(p6, 1, principal);
-        principal.PONE(p7, 1, principal);
-        principal.PONE(p8, 1, principal);
-        principal.PONE(p9, 1, principal);
-        principal.PONE(p10, 1, principal);
-        principal.PONE(p11, 1, principal);
-        principal.PONE(p12, 1, principal);
-        principal.PONE(p13, 1, principal);
-        principal.PONE(p14, 1, principal);
-        principal.PONE(p15, 1, principal);
-        principal.PONE(p16, 1, principal);
-        principal.PONE(p17, 1, principal);
-        principal.PONE(p18, 1, principal);
-        principal.PONE(p19, 1, principal);
-        principal.PONE(p20, 1, principal);
-        principal.PONE(p21, 1, principal);
-        principal.PONE(p22, 1, principal);
-        principal.PONE(p23, 1, principal);
-        principal.PONE(p24, 1, principal);
-        principal.PONE(p25, 1, principal);
-        principal.PONE(p26, 1, principal);
-        principal.PONE(p27, 1, principal);
-        principal.PONE(p28, 1, principal);
-        principal.PONE(p29, 1, principal);
-        principal.PONE(p30, 1, principal);
-        principal.PONE(p31, 1, principal);
-        principal.PONE(p32, 1, principal);
-        principal.PONE(p33, 1, principal);
-        principal.PONE(p34, 1, principal);
-        principal.PONE(p35, 1, principal);
-        principal.PONE(p36, 1, principal);
-        principal.PONE(p37, 1, principal);
-        principal.PONE(p38, 1, principal);
-        principal.PONE(p39, 1, principal);
-        principal.PONE(p40, 1, principal);
-        principal.PONE(p41, 1, principal);
-        principal.PONE(p42, 1, principal);
-        principal.PONE(p43, 1, principal);
-        principal.PONE(p44, 1, principal);
-        principal.PONE(p45, 1, principal);
-        principal.PONE(p46, 1, principal);
-        principal.PONE(p47, 1, principal);
-        principal.PONE(p48, 1, principal);
-        principal.PONE(p49, 1, principal);
-        principal.PONE(p50, 1, principal);
-        principal.IMPRIME_LISTA(principal);
-        jLabelPersona1.setText(p1.getNombre());
-        jLabelPersona2.setText(p2.getNombre());
-        jLabelPersona3.setText(p3.getNombre());
-        jLabelPersona4.setText(p4.getNombre());
-        jLabelPersona5.setText(p5.getNombre());
-        JOptionPane.showMessageDialog(null, "Comienza");
-        cronos=true;
-        Cronometro1 c = new Cronometro1();
-        c.run();
-        //usar el sleep
+        if (opciones) {
+            //meter a las personas a la cola
+            principal.PONE(p1, 1, principal);
+            principal.PONE(p2, 1, principal);
+            principal.PONE(p3, 1, principal);
+            principal.PONE(p4, 1, principal);
+            principal.PONE(p5, 1, principal);
+            principal.PONE(p6, 1, principal);
+            principal.PONE(p7, 1, principal);
+            principal.PONE(p8, 1, principal);
+            principal.PONE(p9, 1, principal);
+            principal.PONE(p10, 1, principal);
+            principal.PONE(p11, 1, principal);
+            principal.PONE(p12, 1, principal);
+            principal.PONE(p13, 1, principal);
+            principal.PONE(p14, 1, principal);
+            principal.PONE(p15, 1, principal);
+            principal.PONE(p16, 1, principal);
+            principal.PONE(p17, 1, principal);
+            principal.PONE(p18, 1, principal);
+            principal.PONE(p19, 1, principal);
+            principal.PONE(p20, 1, principal);
+            principal.PONE(p21, 1, principal);
+            principal.PONE(p22, 1, principal);
+            principal.PONE(p23, 1, principal);
+            principal.PONE(p24, 1, principal);
+            principal.PONE(p25, 1, principal);
+            principal.PONE(p26, 1, principal);
+            principal.PONE(p27, 1, principal);
+            principal.PONE(p28, 1, principal);
+            principal.PONE(p29, 1, principal);
+            principal.PONE(p30, 1, principal);
+            principal.PONE(p31, 1, principal);
+            principal.PONE(p32, 1, principal);
+            principal.PONE(p33, 1, principal);
+            principal.PONE(p34, 1, principal);
+            principal.PONE(p35, 1, principal);
+            principal.PONE(p36, 1, principal);
+            principal.PONE(p37, 1, principal);
+            principal.PONE(p38, 1, principal);
+            principal.PONE(p39, 1, principal);
+            principal.PONE(p40, 1, principal);
+            principal.PONE(p41, 1, principal);
+            principal.PONE(p42, 1, principal);
+            principal.PONE(p43, 1, principal);
+            principal.PONE(p44, 1, principal);
+            principal.PONE(p45, 1, principal);
+            principal.PONE(p46, 1, principal);
+            principal.PONE(p47, 1, principal);
+            principal.PONE(p48, 1, principal);
+            principal.PONE(p49, 1, principal);
+            principal.PONE(p50, 1, principal);
+            principal.PONE(p50, 1, principal);
+            principal.PONE(p51, 1, principal);
+            principal.PONE(p52, 1, principal);
+            principal.PONE(p53, 1, principal);
+            principal.PONE(p54, 1, principal);
+            principal.PONE(p55, 1, principal);
+            principal.PONE(p56, 1, principal);
+            principal.PONE(p57, 1, principal);
+            principal.PONE(p58, 1, principal);
+            principal.PONE(p59, 1, principal);
+            principal.PONE(p60, 1, principal);
+            principal.PONE(p61, 1, principal);
+            principal.PONE(p62, 1, principal);
+            principal.PONE(p63, 1, principal);
+            principal.PONE(p64, 1, principal);
+            principal.PONE(p65, 1, principal);
+            principal.PONE(p66, 1, principal);
+            principal.PONE(p67, 1, principal);
+            principal.PONE(p68, 1, principal);
+            principal.PONE(p69, 1, principal);
+            principal.PONE(p70, 1, principal);
+            principal.PONE(p71, 1, principal);
+            principal.PONE(p72, 1, principal);
+            principal.PONE(p73, 1, principal);
+            principal.PONE(p74, 1, principal);
+            principal.PONE(p75, 1, principal);
+            principal.PONE(p76, 1, principal);
+            principal.PONE(p77, 1, principal);
+            principal.PONE(p78, 1, principal);
+            principal.PONE(p79, 1, principal);
+            principal.PONE(p80, 1, principal);
+            cronos=true;
+            Cronometro1 c = new Cronometro1();
+            c.run();
+        }else{
+            
+        }
+        
         
         
     }//GEN-LAST:event_jButton1StartActionPerformed
@@ -554,28 +462,18 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1Fondo1;
     private javax.swing.JLabel jLabel1Fondo2;
     private javax.swing.JLabel jLabel1Fondo3;
-    private javax.swing.JLabel jLabelCajero1;
     private javax.swing.JLabel jLabelCajero10;
     private javax.swing.JLabel jLabelCajero11;
     private javax.swing.JLabel jLabelCajero12;
     private javax.swing.JLabel jLabelCajero13;
     private javax.swing.JLabel jLabelCajero14;
     private javax.swing.JLabel jLabelCajero15;
-    private javax.swing.JLabel jLabelCajero2;
-    private javax.swing.JLabel jLabelCajero3;
-    private javax.swing.JLabel jLabelCajero4;
-    private javax.swing.JLabel jLabelCajero5;
     private javax.swing.JLabel jLabelCajero6;
     private javax.swing.JLabel jLabelCajero7;
     private javax.swing.JLabel jLabelCajero8;
     private javax.swing.JLabel jLabelCajero9;
     private javax.swing.JLabel jLabelCajeros;
     private javax.swing.JLabel jLabelLogo;
-    private javax.swing.JLabel jLabelPersona1;
-    private javax.swing.JLabel jLabelPersona2;
-    private javax.swing.JLabel jLabelPersona3;
-    private javax.swing.JLabel jLabelPersona4;
-    private javax.swing.JLabel jLabelPersona5;
     private javax.swing.JList<String> jList1;
     private javax.swing.JList<String> jList2;
     private javax.swing.JList<String> jList3;
@@ -597,6 +495,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea3;
     private javax.swing.JTextArea jTextArea4;
     private javax.swing.JTextArea jTextArea5;
+    public static javax.swing.JProgressBar pg_1;
     // End of variables declaration//GEN-END:variables
     
     public class Cronometro1 extends Thread{
@@ -604,6 +503,7 @@ public class Main extends javax.swing.JFrame {
         @Override
         public void run(){
         int x = 120;
+        int x2 = 0;
         
             while(cronos){
             
@@ -614,9 +514,62 @@ public class Main extends javax.swing.JFrame {
                 }
                 x--;
                 System.out.println(x);
+                //x2++;
+                //pg_1.setValue(x2);
+                
+                //quita
+                Persona per = principal.getPersona();
+                int cont = per.getTiempo();
+                if(x==119){
+                    temp=119;
+                }
+                if(x==(temp-cont)){
+                    //asignar un cajero random
+                    
+                    Random rand = new Random();
+                    int a = rand.nextInt(5)+1;
+                    switch(a){
+                        case 1:{
+                            aux=c1;
+                            break;
+                        }
+                        case 2:{
+                            aux=c2;
+                            break;
+                        }
+                        case 3:{
+                            aux=c3;
+                            break;
+                        }
+                        case 4:{
+                            aux=c4;
+                            break;
+                        }
+                        case 5:{
+                            aux=c5;
+                            break;
+                        }
+                        default:{
+                            System.out.println("no entro a ninguno");
+                            //aux=null;
+                        }
+                    }
+                    aux.setVacio(false);
+                    String t = per.getTransaction();
+                    aux.getPila().METE(t, aux.getPila());
+                    principal.QUITA(principal);
+                    temp=temp-cont;
+                }
+                    
+                
                 if(x==0){
                     cronos=false;
                     jDialogOpcion1.setVisible(false);
+                    jTextArea5.setText(c1.getPila().toString(c1.getPila()));
+                    jTextArea1.setText(c2.getPila().toString(c2.getPila()));
+                    jTextArea2.setText(c3.getPila().toString(c3.getPila()));
+                    jTextArea3.setText(c4.getPila().toString(c4.getPila()));
+                    jTextArea4.setText(c5.getPila().toString(c5.getPila()));
                     jDialogFinal.setModal(true); //no poder tocar a principal
                     jDialogFinal.pack();//tamaño se acople a los controles preestablecidos
                     jDialogFinal.setVisible(true);
@@ -631,6 +584,7 @@ public class Main extends javax.swing.JFrame {
         public void run(){
         int x = 120;
         
+        
             while(cronos){
             
                 try {
@@ -639,6 +593,8 @@ public class Main extends javax.swing.JFrame {
                     System.out.println("Error en el hilo"+ex.getMessage());
                 }
                 x--;
+                
+                
                 System.out.println(x);
                 if(x==0){
                     cronos=false;
@@ -652,4 +608,108 @@ public class Main extends javax.swing.JFrame {
     }
     
     boolean cronos=false;
+    Cajero c1 = new Cajero();
+    Cajero c2 = new Cajero();
+    Cajero c3 = new Cajero();
+    Cajero c4 = new Cajero();
+    Cajero c5 = new Cajero();
+    
+    //crear las personas
+        Persona p1 = new Persona("Valeria","Deposito");
+        Persona p2 = new Persona("Janine","Pago");
+        Persona p3 = new Persona("Eduardo","Deposito");
+        Persona p4 = new Persona("Antonio","Retiro");
+        Persona p5 = new Persona("Claudia","Pago");
+        Persona p6 = new Persona("Enrique","Deposito");
+        Persona p7 = new Persona("Samuel","Retiro");
+        Persona p8 = new Persona("Fernando","Deposito");
+        Persona p9 = new Persona("Tyler","Pago");
+        Persona p10 = new Persona("Manuel","Retiro");
+        Persona p11 = new Persona("Ana","Pago");
+        Persona p12 = new Persona("Cecilia","Deposito");
+        Persona p13 = new Persona("Gustavo","Pago");
+        Persona p14 = new Persona("Luis","Retiro");
+        Persona p15 = new Persona("Carlos","Deposito");
+        Persona p16 = new Persona("Noel","Pago");
+        Persona p17 = new Persona("Walter","Retiro");
+        Persona p18 = new Persona("Ronal","Deposito");
+        Persona p19 = new Persona("Josue","Deposito");
+        Persona p20 = new Persona("Roman","Pago");
+        Persona p21 = new Persona("Esmeralda","Retiro");
+        Persona p22 = new Persona("Dora","Deposito");
+        Persona p23 = new Persona("Gladys","Pago");
+        Persona p24 = new Persona("Maria","Pago");
+        Persona p25 = new Persona("Paola","Retiro");
+        Persona p26 = new Persona("Emmanuel","Retiro");
+        Persona p27 = new Persona("Daniel","Deposito");
+        Persona p28 = new Persona("Angel","Pago");
+        Persona p29 = new Persona("Jorge","Pago");
+        Persona p30 = new Persona("Alejandro","Deposito");
+        Persona p31 = new Persona("Pedro","Retiro");
+        Persona p32 = new Persona("Armando","Deposito");
+        Persona p33 = new Persona("Emma","Deposito");
+        Persona p34 = new Persona("Dulce","Deposito");
+        Persona p35 = new Persona("Felipe","Pago");
+        Persona p36 = new Persona("Anahi","Retiro");
+        Persona p37 = new Persona("Ricardo","Retiro");
+        Persona p38 = new Persona("Hugo","Pago");
+        Persona p39 = new Persona("Lydia","Deposito");
+        Persona p40 = new Persona("Isabel","Retiro");
+        Persona p41 = new Persona("Tirsa","Deposito");
+        Persona p42 = new Persona("Andres","Retiro");
+        Persona p43 = new Persona("Isabella","Pago");
+        Persona p44 = new Persona("Annie","Deposito");
+        Persona p45 = new Persona("Lucas","Deposito");
+        Persona p46 = new Persona("Ruth","Retiro");
+        Persona p47 = new Persona("Mario","Pago");
+        Persona p48 = new Persona("Abigail","Deposito");
+        Persona p49 = new Persona("Hector","Deposito");
+        Persona p50 = new Persona("Pablo","Pago");
+        Persona p51 = new Persona("Sarahi","Retiro");
+        Persona p52 = new Persona("Giovanni","Deposito");
+        Persona p53 = new Persona("Ariel","Deposito");
+        Persona p54 = new Persona("Arianna","Pago");
+        Persona p55 = new Persona("Sofia","Pago");
+        Persona p56 = new Persona("Marilyn","Deposito");
+        Persona p57 = new Persona("Jackelin","Retiro");
+        Persona p58 = new Persona("Denisse","Deposito");
+        Persona p59 = new Persona("Marco","Retiro");
+        Persona p60 = new Persona("Adriel","Deposito");
+        Persona p61 = new Persona("Vanessa","Deposito");
+        Persona p62 = new Persona("Melissa","Pago");
+        Persona p63 = new Persona("Felipe","Deposito");
+        Persona p64 = new Persona("Adoni","Pago");
+        Persona p65 = new Persona("Belinda","Deposito");
+        Persona p66 = new Persona("Cerhiel","Retiro");
+        Persona p67 = new Persona("Nicole","Deposito");
+        Persona p68 = new Persona("Martha","Pago");
+        Persona p69 = new Persona("Fausto","Deposito");
+        Persona p70 = new Persona("Alex","Retiro");
+        Persona p71 = new Persona("Otis","Deposito");
+        Persona p72 = new Persona("Olvier","Pago");
+        Persona p73 = new Persona("Thea","Deposito");
+        Persona p74 = new Persona("Laurel","Deposito");
+        Persona p75 = new Persona("Felicity","Pago");
+        Persona p76 = new Persona("John","Deposito");
+        Persona p77 = new Persona("Sarah","Retiro");
+        Persona p78 = new Persona("Jake","Pago");
+        Persona p79 = new Persona("Jett","Deposito");
+        Persona p80 = new Persona("Sage","Deposito");
+        Persona p81 = new Persona("Phoenix","Pago");
+        Persona p82 = new Persona("Reyna","Deposito");
+        Persona p83 = new Persona("Ashley","Pago");
+        Persona p84 = new Persona("Leyla","Deposito");
+        Persona p85 = new Persona("Victor","Deposito");
+        Persona p86 = new Persona("Katia","Deposito");
+        Persona p87 = new Persona("Marlon","Deposito");
+        Persona p88 = new Persona("Bianka","Deposito");
+        Persona p89 = new Persona("Gabriel","Deposito");
+        Persona p90 = new Persona("Saul","Deposito");
+        
+        Cola principal = new Cola();
+        int temp=0;
+        Cajero aux = new Cajero();
+     
+        boolean opciones=false;
+     
 }
