@@ -188,6 +188,7 @@ public class Main extends javax.swing.JFrame {
         }else if((Integer)jSpinner1.getValue()==4){
             jLabelCajero5.setVisible(false);
             jTextArea4.setVisible(false);
+            jScrollPane4.setVisible(false);
         }
     }//GEN-LAST:event_jButtonOpcion2ActionPerformed
 
