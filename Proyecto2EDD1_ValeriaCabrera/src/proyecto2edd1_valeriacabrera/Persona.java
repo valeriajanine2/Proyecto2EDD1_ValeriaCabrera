@@ -14,6 +14,7 @@ public class Persona {
     private String nombre;
     private int seg;
     private String transaction;
+    private int numC;
     
     public Persona(){
         //constructor vacio
@@ -33,6 +34,14 @@ public class Persona {
     
     public int getTiempo(){
         return this.seg;
+    }
+    
+    public void setCajero(int numC){
+        this.numC=numC;
+    }
+    
+    public int getCajero(){
+        return this.numC;
     }
     
     public String getTransaction(){

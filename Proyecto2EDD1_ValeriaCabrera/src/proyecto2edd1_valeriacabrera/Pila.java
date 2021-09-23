@@ -32,7 +32,7 @@ public class Pila extends Lista{
     }
     
     @Override
-    void PONE(Persona P, int opcion, Lista L){
+    void PONE(Persona P, Lista L){
         //solo para que no tire error la abstraccion
     }
     

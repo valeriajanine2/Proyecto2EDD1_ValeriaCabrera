@@ -17,9 +17,10 @@ public abstract class Lista {
     
     public Lista(){
         //constructor vacio
+        
     }
     
-    abstract void PONE(Persona p, int opcion, Lista L);
+    abstract void PONE(Persona p, Lista L);
     abstract void METE(String trans, Lista L);
     abstract void QUITA(Lista L);
     abstract void ANULA(Lista L);

@@ -5,6 +5,7 @@
  */
 package proyecto2edd1_valeriacabrera;
 
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
@@ -23,7 +24,6 @@ public class Main extends javax.swing.JFrame {
     public Main() {
         initComponents();
         this.setLocationRelativeTo(null);
-        pg_1.setValue(0);
         
         
     }
@@ -37,33 +37,12 @@ public class Main extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jDialogOpcion1 = new javax.swing.JDialog();
-        pg_1 = new javax.swing.JProgressBar();
-        jLabel1Fondo1 = new javax.swing.JLabel();
-        jDialogOpcion2 = new javax.swing.JDialog();
-        jLabelCajero6 = new javax.swing.JLabel();
-        jLabelCajero7 = new javax.swing.JLabel();
-        jLabelCajero8 = new javax.swing.JLabel();
-        jLabelCajero9 = new javax.swing.JLabel();
-        jLabelCajero10 = new javax.swing.JLabel();
-        jButton1Start1 = new javax.swing.JButton();
-        jScrollPane6 = new javax.swing.JScrollPane();
-        jList1 = new javax.swing.JList<>();
-        jScrollPane7 = new javax.swing.JScrollPane();
-        jList2 = new javax.swing.JList<>();
-        jScrollPane8 = new javax.swing.JScrollPane();
-        jList3 = new javax.swing.JList<>();
-        jScrollPane9 = new javax.swing.JScrollPane();
-        jList4 = new javax.swing.JList<>();
-        jScrollPane10 = new javax.swing.JScrollPane();
-        jList5 = new javax.swing.JList<>();
-        jLabel1Fondo2 = new javax.swing.JLabel();
         jDialogFinal = new javax.swing.JDialog();
-        jLabelCajero11 = new javax.swing.JLabel();
-        jLabelCajero12 = new javax.swing.JLabel();
-        jLabelCajero13 = new javax.swing.JLabel();
-        jLabelCajero14 = new javax.swing.JLabel();
-        jLabelCajero15 = new javax.swing.JLabel();
+        jLabelCajero3 = new javax.swing.JLabel();
+        jLabelCajero1 = new javax.swing.JLabel();
+        jLabelCajero4 = new javax.swing.JLabel();
+        jLabelCajero5 = new javax.swing.JLabel();
+        jLabelCajero2 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         jScrollPane2 = new javax.swing.JScrollPane();
@@ -83,105 +62,27 @@ public class Main extends javax.swing.JFrame {
         jButton1Start = new javax.swing.JButton();
         jLabel1Fondo = new javax.swing.JLabel();
 
-        jDialogOpcion1.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        pg_1.setBackground(new java.awt.Color(51, 51, 51));
-        pg_1.setForeground(new java.awt.Color(102, 0, 0));
-        pg_1.setMaximum(120);
-        jDialogOpcion1.getContentPane().add(pg_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 120, 450, -1));
-
-        jLabel1Fondo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/background1.jpg"))); // NOI18N
-        jDialogOpcion1.getContentPane().add(jLabel1Fondo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-140, -180, 740, 500));
-
-        jDialogOpcion2.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabelCajero6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atm.png"))); // NOI18N
-        jLabelCajero6.setToolTipText("");
-        jDialogOpcion2.getContentPane().add(jLabelCajero6, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 60, -1, -1));
-
-        jLabelCajero7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atm.png"))); // NOI18N
-        jLabelCajero7.setToolTipText("");
-        jDialogOpcion2.getContentPane().add(jLabelCajero7, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, -1, -1));
-
-        jLabelCajero8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atm.png"))); // NOI18N
-        jLabelCajero8.setToolTipText("");
-        jDialogOpcion2.getContentPane().add(jLabelCajero8, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 60, -1, -1));
-
-        jLabelCajero9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atm.png"))); // NOI18N
-        jLabelCajero9.setToolTipText("");
-        jDialogOpcion2.getContentPane().add(jLabelCajero9, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 60, -1, -1));
-
-        jLabelCajero10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atm.png"))); // NOI18N
-        jLabelCajero10.setToolTipText("");
-        jDialogOpcion2.getContentPane().add(jLabelCajero10, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 60, -1, -1));
-
-        jButton1Start1.setText("Start");
-        jButton1Start1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1Start1ActionPerformed(evt);
-            }
-        });
-        jDialogOpcion2.getContentPane().add(jButton1Start1, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 450, -1, -1));
-
-        jScrollPane6.setViewportView(jList1);
-
-        jDialogOpcion2.getContentPane().add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 220, 100, 210));
-
-        jScrollPane7.setViewportView(jList2);
-
-        jDialogOpcion2.getContentPane().add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 220, 100, 210));
-
-        jList3.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { " " };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
-        jScrollPane8.setViewportView(jList3);
-
-        jDialogOpcion2.getContentPane().add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 220, 100, 210));
-
-        jList4.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
-        jScrollPane9.setViewportView(jList4);
-
-        jDialogOpcion2.getContentPane().add(jScrollPane9, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 220, 100, 210));
-
-        jList5.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
-        jScrollPane10.setViewportView(jList5);
-
-        jDialogOpcion2.getContentPane().add(jScrollPane10, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 220, 100, 210));
-
-        jLabel1Fondo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/background1.jpg"))); // NOI18N
-        jDialogOpcion2.getContentPane().add(jLabel1Fondo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 990, 560));
-
         jDialogFinal.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabelCajero11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atm.png"))); // NOI18N
-        jLabelCajero11.setToolTipText("");
-        jDialogFinal.getContentPane().add(jLabelCajero11, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 60, -1, -1));
+        jLabelCajero3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atm.png"))); // NOI18N
+        jLabelCajero3.setToolTipText("");
+        jDialogFinal.getContentPane().add(jLabelCajero3, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 60, -1, -1));
 
-        jLabelCajero12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atm.png"))); // NOI18N
-        jLabelCajero12.setToolTipText("");
-        jDialogFinal.getContentPane().add(jLabelCajero12, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, -1, -1));
+        jLabelCajero1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atm.png"))); // NOI18N
+        jLabelCajero1.setToolTipText("");
+        jDialogFinal.getContentPane().add(jLabelCajero1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, -1, -1));
 
-        jLabelCajero13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atm.png"))); // NOI18N
-        jLabelCajero13.setToolTipText("");
-        jDialogFinal.getContentPane().add(jLabelCajero13, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 60, -1, -1));
+        jLabelCajero4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atm.png"))); // NOI18N
+        jLabelCajero4.setToolTipText("");
+        jDialogFinal.getContentPane().add(jLabelCajero4, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 60, -1, -1));
 
-        jLabelCajero14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atm.png"))); // NOI18N
-        jLabelCajero14.setToolTipText("");
-        jDialogFinal.getContentPane().add(jLabelCajero14, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 60, -1, -1));
+        jLabelCajero5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atm.png"))); // NOI18N
+        jLabelCajero5.setToolTipText("");
+        jDialogFinal.getContentPane().add(jLabelCajero5, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 60, -1, -1));
 
-        jLabelCajero15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atm.png"))); // NOI18N
-        jLabelCajero15.setToolTipText("");
-        jDialogFinal.getContentPane().add(jLabelCajero15, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 60, -1, -1));
+        jLabelCajero2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/atm.png"))); // NOI18N
+        jLabelCajero2.setToolTipText("");
+        jDialogFinal.getContentPane().add(jLabelCajero2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 60, -1, -1));
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
@@ -268,152 +169,386 @@ public class Main extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonOpcion1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonOpcion1ActionPerformed
-        /*if((Integer)jSpinner1.getValue()==1){
-            jLabelCajero1.setVisible(false);//tercero
-            jLabelCajero5.setVisible(false);//segundo
-            jLabelCajero3.setVisible(false);//cuarto
-            jLabelCajero4.setVisible(false);//quinto
-        }else if((Integer)jSpinner1.getValue()==2){
-            jLabelCajero1.setVisible(false);
-            jLabelCajero3.setVisible(false);
-            jLabelCajero4.setVisible(false);
-        }else if((Integer)jSpinner1.getValue()==3){
-            jLabelCajero3.setVisible(false);
-            jLabelCajero4.setVisible(false);
-
-        }else if((Integer)jSpinner1.getValue()==4){
-            jLabelCajero4.setVisible(false);
-        }*/
-        jDialogOpcion1.setModal(true); //no poder tocar a principal
-        jDialogOpcion1.pack();//tamaño se acople a los controles preestablecidos
-        jDialogOpcion1.setVisible(true);
-        opciones=true;
+    opciones=true;
     }//GEN-LAST:event_jButtonOpcion1ActionPerformed
 
     private void jButtonOpcion2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonOpcion2ActionPerformed
-        /*if((Integer)jSpinner1.getValue()==1){
-            jLabelCajero6.setVisible(false);//tercero
-            jLabelCajero10.setVisible(false);//segundo
-            jLabelCajero8.setVisible(false);//cuarto
-            jLabelCajero9.setVisible(false);//quinto
+        if((Integer)jSpinner1.getValue()==1){
+            jLabelCajero2.setVisible(false);//tercero
+            jLabelCajero3.setVisible(false);//segundo
+            jLabelCajero4.setVisible(false);//cuarto
+            jLabelCajero5.setVisible(false);//quinto
         }else if((Integer)jSpinner1.getValue()==2){
-            jLabelCajero6.setVisible(false);
-            jLabelCajero8.setVisible(false);
-            jLabelCajero9.setVisible(false);
+            jLabelCajero3.setVisible(false);
+            jLabelCajero4.setVisible(false);
+            jLabelCajero5.setVisible(false);
         }else if((Integer)jSpinner1.getValue()==3){
-            jLabelCajero8.setVisible(false);
-            jLabelCajero9.setVisible(false);
+            jLabelCajero4.setVisible(false);
+            jLabelCajero5.setVisible(false);
         }else if((Integer)jSpinner1.getValue()==4){
-            jLabelCajero9.setVisible(false);
-        }*/
-        jDialogOpcion2.setModal(true); //no poder tocar a principal
-        jDialogOpcion2.pack();//tamaño se acople a los controles preestablecidos
-        jDialogOpcion2.setVisible(true);
+            jLabelCajero5.setVisible(false);
+            jTextArea4.setVisible(false);
+        }
     }//GEN-LAST:event_jButtonOpcion2ActionPerformed
 
     private void jButton1StartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1StartActionPerformed
         if (opciones) {
             //meter a las personas a la cola
-            principal.PONE(p1, 1, principal);
-            principal.PONE(p2, 1, principal);
-            principal.PONE(p3, 1, principal);
-            principal.PONE(p4, 1, principal);
-            principal.PONE(p5, 1, principal);
-            principal.PONE(p6, 1, principal);
-            principal.PONE(p7, 1, principal);
-            principal.PONE(p8, 1, principal);
-            principal.PONE(p9, 1, principal);
-            principal.PONE(p10, 1, principal);
-            principal.PONE(p11, 1, principal);
-            principal.PONE(p12, 1, principal);
-            principal.PONE(p13, 1, principal);
-            principal.PONE(p14, 1, principal);
-            principal.PONE(p15, 1, principal);
-            principal.PONE(p16, 1, principal);
-            principal.PONE(p17, 1, principal);
-            principal.PONE(p18, 1, principal);
-            principal.PONE(p19, 1, principal);
-            principal.PONE(p20, 1, principal);
-            principal.PONE(p21, 1, principal);
-            principal.PONE(p22, 1, principal);
-            principal.PONE(p23, 1, principal);
-            principal.PONE(p24, 1, principal);
-            principal.PONE(p25, 1, principal);
-            principal.PONE(p26, 1, principal);
-            principal.PONE(p27, 1, principal);
-            principal.PONE(p28, 1, principal);
-            principal.PONE(p29, 1, principal);
-            principal.PONE(p30, 1, principal);
-            principal.PONE(p31, 1, principal);
-            principal.PONE(p32, 1, principal);
-            principal.PONE(p33, 1, principal);
-            principal.PONE(p34, 1, principal);
-            principal.PONE(p35, 1, principal);
-            principal.PONE(p36, 1, principal);
-            principal.PONE(p37, 1, principal);
-            principal.PONE(p38, 1, principal);
-            principal.PONE(p39, 1, principal);
-            principal.PONE(p40, 1, principal);
-            principal.PONE(p41, 1, principal);
-            principal.PONE(p42, 1, principal);
-            principal.PONE(p43, 1, principal);
-            principal.PONE(p44, 1, principal);
-            principal.PONE(p45, 1, principal);
-            principal.PONE(p46, 1, principal);
-            principal.PONE(p47, 1, principal);
-            principal.PONE(p48, 1, principal);
-            principal.PONE(p49, 1, principal);
-            principal.PONE(p50, 1, principal);
-            principal.PONE(p50, 1, principal);
-            principal.PONE(p51, 1, principal);
-            principal.PONE(p52, 1, principal);
-            principal.PONE(p53, 1, principal);
-            principal.PONE(p54, 1, principal);
-            principal.PONE(p55, 1, principal);
-            principal.PONE(p56, 1, principal);
-            principal.PONE(p57, 1, principal);
-            principal.PONE(p58, 1, principal);
-            principal.PONE(p59, 1, principal);
-            principal.PONE(p60, 1, principal);
-            principal.PONE(p61, 1, principal);
-            principal.PONE(p62, 1, principal);
-            principal.PONE(p63, 1, principal);
-            principal.PONE(p64, 1, principal);
-            principal.PONE(p65, 1, principal);
-            principal.PONE(p66, 1, principal);
-            principal.PONE(p67, 1, principal);
-            principal.PONE(p68, 1, principal);
-            principal.PONE(p69, 1, principal);
-            principal.PONE(p70, 1, principal);
-            principal.PONE(p71, 1, principal);
-            principal.PONE(p72, 1, principal);
-            principal.PONE(p73, 1, principal);
-            principal.PONE(p74, 1, principal);
-            principal.PONE(p75, 1, principal);
-            principal.PONE(p76, 1, principal);
-            principal.PONE(p77, 1, principal);
-            principal.PONE(p78, 1, principal);
-            principal.PONE(p79, 1, principal);
-            principal.PONE(p80, 1, principal);
+            principal.PONE(p1,principal);
+            principal.PONE(p2,principal);
+            principal.PONE(p3,principal);
+            principal.PONE(p4,principal);
+            principal.PONE(p5,principal);
+            principal.PONE(p6,principal);
+            principal.PONE(p7,principal);
+            principal.PONE(p8,principal);
+            principal.PONE(p9,principal);
+            principal.PONE(p10,principal);
+            principal.PONE(p11,principal);
+            principal.PONE(p12,principal);
+            principal.PONE(p13,principal);
+            principal.PONE(p14,principal);
+            principal.PONE(p15,principal);
+            principal.PONE(p16,principal);
+            principal.PONE(p17,principal);
+            principal.PONE(p18,principal);
+            principal.PONE(p19,principal);
+            principal.PONE(p20,principal);
+            principal.PONE(p21,principal);
+            principal.PONE(p22,principal);
+            principal.PONE(p23,principal);
+            principal.PONE(p24,principal);
+            principal.PONE(p25,principal);
+            principal.PONE(p26,principal);
+            principal.PONE(p27,principal);
+            principal.PONE(p28,principal);
+            principal.PONE(p29,principal);
+            principal.PONE(p30,principal);
+            principal.PONE(p31,principal);
+            principal.PONE(p32,principal);
+            principal.PONE(p33,principal);
+            principal.PONE(p34,principal);
+            principal.PONE(p35,principal);
+            principal.PONE(p36,principal);
+            principal.PONE(p37,principal);
+            principal.PONE(p38,principal);
+            principal.PONE(p39,principal);
+            principal.PONE(p40,principal);
+            principal.PONE(p41,principal);
+            principal.PONE(p42,principal);
+            principal.PONE(p43,principal);
+            principal.PONE(p44,principal);
+            principal.PONE(p45,principal);
+            principal.PONE(p46,principal);
+            principal.PONE(p47,principal);
+            principal.PONE(p48,principal);
+            principal.PONE(p49,principal);
+            principal.PONE(p50,principal);
+            principal.PONE(p50,principal);
+            principal.PONE(p51,principal);
+            principal.PONE(p52,principal);
+            principal.PONE(p53,principal);
+            principal.PONE(p54,principal);
+            principal.PONE(p55,principal);
+            principal.PONE(p56,principal);
+            principal.PONE(p57,principal);
+            principal.PONE(p58,principal);
+            principal.PONE(p59,principal);
+            principal.PONE(p60,principal);
+            principal.PONE(p61,principal);
+            principal.PONE(p62,principal);
+            principal.PONE(p63,principal);
+            principal.PONE(p64,principal);
+            principal.PONE(p65,principal);
+            principal.PONE(p66,principal);
+            principal.PONE(p67,principal);
+            principal.PONE(p68,principal);
+            principal.PONE(p69,principal);
+            principal.PONE(p70,principal);
+            principal.PONE(p71,principal);
+            principal.PONE(p72,principal);
+            principal.PONE(p73,principal);
+            principal.PONE(p74,principal);
+            principal.PONE(p75,principal);
+            principal.PONE(p76,principal);
+            principal.PONE(p77,principal);
+            principal.PONE(p78,principal);
+            principal.PONE(p79,principal);
+            principal.PONE(p80,principal);
             cronos=true;
             Cronometro1 c = new Cronometro1();
             c.run();
         }else{
+            //llenar el arraylist
+            people.add(p1);
+            people.add(p2);
+            people.add(p3);
+            people.add(p4);
+            people.add(p5);
+            people.add(p6);
+            people.add(p7);
+            people.add(p8);
+            people.add(p9);
+            people.add(p10);
+            people.add(p11);
+            people.add(p12);
+            people.add(p13);
+            people.add(p14);
+            people.add(p15);
+            people.add(p16);
+            people.add(p17);
+            people.add(p18);
+            people.add(p19);
+            people.add(p20);
+            people.add(p21);
+            people.add(p22);
+            people.add(p23);
+            people.add(p24);
+            people.add(p25);
+            people.add(p26);
+            people.add(p27);
+            people.add(p28);
+            people.add(p29);
+            people.add(p30);
+            people.add(p31);
+            people.add(p32);
+            people.add(p33);
+            people.add(p34);
+            people.add(p35);
+            people.add(p36);
+            people.add(p37);
+            people.add(p38);
+            people.add(p39);
+            people.add(p40);
+            people.add(p41);
+            people.add(p42);
+            people.add(p43);
+            people.add(p44);
+            people.add(p45);
+            people.add(p46);
+            people.add(p47);
+            people.add(p48);
+            people.add(p49);
+            people.add(p50);
+            people.add(p51);
+            people.add(p52);
+            people.add(p53);
+            people.add(p54);
+            people.add(p55);
+            people.add(p56);
+            people.add(p57);
+            people.add(p58);
+            people.add(p59);
+            people.add(p60);
+            people.add(p61);
+            people.add(p62);
+            people.add(p63);
+            people.add(p64);
+            people.add(p65);
+            people.add(p66);
+            people.add(p67);
+            people.add(p68);
+            people.add(p69);
+            people.add(p70);
+            people.add(p71);
+            people.add(p72);
+            people.add(p73);
+            people.add(p74);
+            people.add(p75);
+            people.add(p76);
+            people.add(p77);
+            people.add(p78);
+            people.add(p79);
+            people.add(p80);
+            people.add(p81);
+            people.add(p82);
+            people.add(p83);
+            people.add(p84);
+            people.add(p85);
+            people.add(p86);
+            people.add(p87);
+            people.add(p88);
+            people.add(p89);
+            people.add(p90);
+            people.add(p41);
+            people.add(p42);
+            people.add(p43);
+            people.add(p44);
+            people.add(p45);
+            people.add(p46);
+            people.add(p47);
+            people.add(p48);
+            people.add(p49);
+            people.add(p50);
+            people.add(p51);
+            people.add(p52);
+            people.add(p53);
+            people.add(p54);
+            people.add(p18);
+            people.add(p19);
+            people.add(p20);
+            people.add(p21);
+            people.add(p22);
+            people.add(p23);
+            people.add(p24);
+            people.add(p66);
+            people.add(p67);
+            people.add(p68);
+            people.add(p69);
+            people.add(p70);
+            people.add(p71);
+            people.add(p72);
+            people.add(p73);
+            people.add(p74);
+            people.add(p75);
+            people.add(p3);
+            people.add(p4);
+            people.add(p5);
+            people.add(p6);
+            people.add(p7);
+            people.add(p29);
+            people.add(p30);
+            people.add(p31);
+            people.add(p32);
+            people.add(p33);
+            people.add(p34);
+            people.add(p35);
+            people.add(p51);
+            people.add(p52);
+            people.add(p53);
+            people.add(p54);
+            people.add(p55);
+            people.add(p56);
+            people.add(p81);
+            people.add(p82);
+            people.add(p83);
+            people.add(p84);
+            people.add(p85);
+            people.add(p86);
+            people.add(p87);
+            people.add(p88);
+            people.add(p89);
+            people.add(p90);
+            people.add(p48);
+            people.add(p49);
+            people.add(p50);
+            people.add(p51);
+            people.add(p52);
+            people.add(p53);
+            people.add(p54);
+            people.add(p55);
+            people.add(p56);
+            people.add(p57);
+            people.add(p58);
+            people.add(p59);
+            people.add(p60);
+            people.add(p61);
+            people.add(p62);
+            people.add(p63);
+            people.add(p64);
+            people.add(p65);
+            people.add(p66);
+            people.add(p8);
+            people.add(p9);
+            people.add(p10);
+            people.add(p11);
+            people.add(p12);
+            people.add(p13);
+            people.add(p14);
+            people.add(p15);
+            people.add(p16);
+            people.add(p17);
+            people.add(p18);
+            people.add(p19);
+            people.add(p20);
+            people.add(p21);
+            people.add(p22);
+            people.add(p23);
+            people.add(p24);
+            people.add(p25);
+            people.add(p26);
+            people.add(p27);
+            people.add(p19);
+            people.add(p20);
+            people.add(p21);
+            people.add(p22);
+            people.add(p23);
+            people.add(p24);
+            people.add(p66);
+            people.add(p67);
+            people.add(p68);
+            people.add(p69);
+            people.add(p70);
+            people.add(p71);
+            people.add(p72);
+            people.add(p73);
+            people.add(p74);
+            people.add(p75);
+            people.add(p3);
+            people.add(p4);
+            people.add(p5);
+            people.add(p6);
+            people.add(p7);
+            people.add(p29);
+            people.add(p30);
+            people.add(p31);
+            people.add(p32);
+            people.add(p33);
+            people.add(p34);
+            people.add(p1);
+            people.add(p2);
+            people.add(p3);
+            people.add(p4);
+            people.add(p5);
+            people.add(p6);
+            people.add(p7);
+            people.add(p8);
+            people.add(p9);
+            people.add(p10);
+            people.add(p11);
+            people.add(p12);
+            people.add(p13);
+            people.add(p14);
+            people.add(p15);
+            people.add(p16);
+            people.add(p17);
+            people.add(p18);
+            people.add(p19);
+            people.add(p20);
+            people.add(p21);
+            
+            //llenar las colas
+            int cont = 1;
+            for (int i = 0; i < people.size(); i++) {
+                Persona tempP = people.get(i);
+                if (cont==1) {
+                    tempP.setCajero(1);
+                    cola1.PONE(tempP, cola1);
+                    
+                    cont++;
+                }else if(cont==2){
+                    tempP.setCajero(2);
+                    cola2.PONE(tempP, cola2);
+                    cont++;
+                }else if(cont==3){
+                    tempP.setCajero(3);
+                    cola3.PONE(tempP, cola3);
+                    cont++;
+                }else if(cont==4){
+                    tempP.setCajero(4);
+                    cola4.PONE(tempP, cola4);
+                    cont=1;
+                }
+            }
+            cronos=true;
+            Cronometro2 c2 = new Cronometro2();
+            c2.run();
             
         }
         
         
         
     }//GEN-LAST:event_jButton1StartActionPerformed
-
-    private void jButton1Start1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1Start1ActionPerformed
-        cronos=true;
-        Cronometro2 c = new Cronometro2();
-        c.run();
-        //comenzar la simulacion
-        
-        
-    }//GEN-LAST:event_jButton1Start1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -452,50 +587,29 @@ public class Main extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1Start;
-    private javax.swing.JButton jButton1Start1;
     private javax.swing.JButton jButtonOpcion1;
     private javax.swing.JButton jButtonOpcion2;
     private javax.swing.JDialog jDialogFinal;
-    private javax.swing.JDialog jDialogOpcion1;
-    private javax.swing.JDialog jDialogOpcion2;
     private javax.swing.JLabel jLabel1Fondo;
-    private javax.swing.JLabel jLabel1Fondo1;
-    private javax.swing.JLabel jLabel1Fondo2;
     private javax.swing.JLabel jLabel1Fondo3;
-    private javax.swing.JLabel jLabelCajero10;
-    private javax.swing.JLabel jLabelCajero11;
-    private javax.swing.JLabel jLabelCajero12;
-    private javax.swing.JLabel jLabelCajero13;
-    private javax.swing.JLabel jLabelCajero14;
-    private javax.swing.JLabel jLabelCajero15;
-    private javax.swing.JLabel jLabelCajero6;
-    private javax.swing.JLabel jLabelCajero7;
-    private javax.swing.JLabel jLabelCajero8;
-    private javax.swing.JLabel jLabelCajero9;
+    private javax.swing.JLabel jLabelCajero1;
+    private javax.swing.JLabel jLabelCajero2;
+    private javax.swing.JLabel jLabelCajero3;
+    private javax.swing.JLabel jLabelCajero4;
+    private javax.swing.JLabel jLabelCajero5;
     private javax.swing.JLabel jLabelCajeros;
     private javax.swing.JLabel jLabelLogo;
-    private javax.swing.JList<String> jList1;
-    private javax.swing.JList<String> jList2;
-    private javax.swing.JList<String> jList3;
-    private javax.swing.JList<String> jList4;
-    private javax.swing.JList<String> jList5;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane10;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
-    private javax.swing.JScrollPane jScrollPane6;
-    private javax.swing.JScrollPane jScrollPane7;
-    private javax.swing.JScrollPane jScrollPane8;
-    private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JSpinner jSpinner1;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextArea jTextArea3;
     private javax.swing.JTextArea jTextArea4;
     private javax.swing.JTextArea jTextArea5;
-    public static javax.swing.JProgressBar pg_1;
     // End of variables declaration//GEN-END:variables
     
     public class Cronometro1 extends Thread{
@@ -514,8 +628,6 @@ public class Main extends javax.swing.JFrame {
                 }
                 x--;
                 System.out.println(x);
-                //x2++;
-                //pg_1.setValue(x2);
                 
                 //quita
                 Persona per = principal.getPersona();
@@ -558,13 +670,13 @@ public class Main extends javax.swing.JFrame {
                     String t = per.getTransaction();
                     aux.getPila().METE(t, aux.getPila());
                     principal.QUITA(principal);
+                    System.out.println("");
                     temp=temp-cont;
                 }
                     
                 
                 if(x==0){
                     cronos=false;
-                    jDialogOpcion1.setVisible(false);
                     jTextArea5.setText(c1.getPila().toString(c1.getPila()));
                     jTextArea1.setText(c2.getPila().toString(c2.getPila()));
                     jTextArea2.setText(c3.getPila().toString(c3.getPila()));
@@ -593,16 +705,171 @@ public class Main extends javax.swing.JFrame {
                     System.out.println("Error en el hilo"+ex.getMessage());
                 }
                 x--;
-                
-                
                 System.out.println(x);
+                
+                //quita
+                Persona per = cola1.getPersona();
+                Persona per2 = cola2.getPersona();
+                Persona per3 = cola3.getPersona();
+                Persona per4 = cola4.getPersona();
+                int cont = per.getTiempo();
+                int cont2 = per2.getTiempo();
+                int cont3 = per3.getTiempo();
+                int cont4 = per4.getTiempo();
+                int a = per.getCajero();
+                int a2 = per2.getCajero();
+                int a3 = per3.getCajero();
+                int a4 = per4.getCajero();
+                if(x==119){
+                    temp=119;
+                    temp2=119;
+                    temp3=119;
+                    temp4=119;
+                }
+                switch(a){
+                    case 1:{
+                        aux2=cola1;
+                        cajero=c1;
+                        break;
+                    }
+                    case 2:{
+                        aux2=cola2;
+                        cajero=c2;
+                        break;
+                    }
+                    case 3:{
+                        aux2=cola3;
+                        cajero=c3;
+                        break;
+                    }
+                    case 4:{
+                        aux2=cola4;
+                        cajero=c4;
+                        break;
+                    }
+                        
+                }
+                if(x==(temp-cont)){
+                        String t = per.getTransaction();
+                        cajero.getPila().METE(t, cajero.getPila());
+                        aux2.QUITA(aux2);
+                        System.out.print(" del cajero 1");
+                        System.out.println("");
+                        temp=temp-cont;
+                }
+                
+                switch(a2){
+                    case 1:{
+                        aux2=cola1;
+                        cajero=c1;
+                        break;
+                    }
+                    case 2:{
+                        aux2=cola2;
+                        cajero=c2;
+                        break;
+                    }
+                    case 3:{
+                        aux2=cola3;
+                        cajero=c3;
+                        break;
+                    }
+                    case 4:{
+                        aux2=cola4;
+                        cajero=c4;
+                        break;
+                    }
+                        
+                }
+                
+               
+                if(x==(temp-cont2)){
+                    String t = per2.getTransaction();
+                    cajero.getPila().METE(t, cajero.getPila());
+                    aux2.QUITA(aux2);
+                    System.out.print(" del cajero 2");
+                    System.out.println("");
+                    temp=temp-cont;
+                }
+                
+                switch(a3){
+                    case 1:{
+                        aux2=cola1;
+                        cajero=c1;
+                        break;
+                    }
+                    case 2:{
+                        aux2=cola2;
+                        cajero=c2;
+                        break;
+                    }
+                    case 3:{
+                        aux2=cola3;
+                        cajero=c3;
+                        break;
+                    }
+                    case 4:{
+                        aux2=cola4;
+                        cajero=c4;
+                        break;
+                    }
+                        
+                }
+                
+                if(x==(temp-cont3)){
+                    String t = per3.getTransaction();
+                    cajero.getPila().METE(t, cajero.getPila());
+                    aux2.QUITA(aux2);
+                    System.out.print(" del cajero 3");
+                    System.out.println("");
+                    temp=temp-cont3;
+                }
+                
+                switch(a4){
+                    case 1:{
+                        aux2=cola1;
+                        cajero=c1;
+                        break;
+                    }
+                    case 2:{
+                        aux2=cola2;
+                        cajero=c2;
+                        break;
+                    }
+                    case 3:{
+                        aux2=cola3;
+                        cajero=c3;
+                        break;
+                    }
+                    case 4:{
+                        aux2=cola4;
+                        cajero=c4;
+                        break;
+                    }
+                        
+                }
+                
+                if(x==(temp-cont4)){
+                    String t = per4.getTransaction();
+                    cajero.getPila().METE(t, cajero.getPila());
+                    aux2.QUITA(aux2);
+                    System.out.print(" del cajero 4");
+                    System.out.println("");
+                    temp=temp-cont4;
+                }
+                    
+                
                 if(x==0){
                     cronos=false;
-                    jDialogOpcion2.setVisible(false);
+                    jTextArea5.setText(c1.getPila().toString(c1.getPila()));
+                    jTextArea1.setText(c2.getPila().toString(c2.getPila()));
+                    jTextArea2.setText(c3.getPila().toString(c3.getPila()));
+                    jTextArea3.setText(c4.getPila().toString(c4.getPila()));
                     jDialogFinal.setModal(true); //no poder tocar a principal
                     jDialogFinal.pack();//tamaño se acople a los controles preestablecidos
                     jDialogFinal.setVisible(true);
                 }
+                
             }
         }
     }
@@ -708,8 +975,19 @@ public class Main extends javax.swing.JFrame {
         
         Cola principal = new Cola();
         int temp=0;
+        int temp2=0;
+        int temp3=0;
+        int temp4=0;
         Cajero aux = new Cajero();
+        Cajero cajero = new Cajero();
+        Cola aux2 = new Cola();
      
         boolean opciones=false;
-     
+        Cola cola1 = new Cola();
+        Cola cola2 = new Cola();
+        Cola cola3 = new Cola();
+        Cola cola4 = new Cola();
+        ArrayList<Persona> people = new ArrayList();
+       
+        
 }

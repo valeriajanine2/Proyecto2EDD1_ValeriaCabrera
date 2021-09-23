@@ -32,24 +32,21 @@ public class Cola extends Lista{
     }
     
     @Override
-    void PONE(Persona P, int opcion, Lista L){
+    void PONE(Persona P,Lista L){
         
-        if(opcion==1){
-            int temp = this.personas.size();//agregar al "final" en la cola
-            if(temp==1){
-                //se añade por primera vez
-                this.personas.add(P);
-            }else{
-                this.personas.add(temp,P);
-            }
+        int temp = this.personas.size();//agregar al "final" en la cola
+        if(temp==1){
+            //se añade por primera vez
+            this.personas.add(P);
         }else{
-            
+            this.personas.add(temp,P);
         }
+        
     }
     
     @Override
     void QUITA(Lista L){
-        System.out.println("removed "+this.personas.get(0).getNombre());
+        System.out.print("salio "+this.personas.get(0).getNombre());
         this.personas.remove(0);
     }
     
